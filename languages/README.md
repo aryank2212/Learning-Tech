@@ -14,7 +14,7 @@ I added two languages you did not ask for in the first round. Keep or delete the
 - **Go** — small, readable language for servers, networking and cloud tools.
 - **SQL** — not a general-purpose language, but every application stores data.
 
-Also worth considering later: **TypeScript** (see [web development](../web-development/README.md)), **Assembly** (x86-64, after C), **Zig** (a modern take on C), **Haskell** (functional programming, changes how you think), **Julia** (numerical computing).
+Also worth considering later: **TypeScript** (see [web development](../web/building/web-development/README.md)), **Assembly** (x86-64, after C), **Zig** (a modern take on C), **Haskell** (functional programming, changes how you think), **Julia** (numerical computing).
 
 ## Comparison
 
@@ -26,11 +26,11 @@ Also worth considering later: **TypeScript** (see [web development](../web-devel
 | Speed | Slow | Fast | Fast | Fast | Fast | Very fast (GPU) | Fast | n/a |
 
 ## Folders
-- [Rust](rust/README.md)
-- [C](c/README.md)
-- [C++](cpp/README.md)
-- [Java](java/README.md)
-- [Python](python/README.md)
-- [CUDA](cuda/README.md)
-- [Go](go/README.md) *(suggested)*
-- [SQL](sql/README.md) *(suggested)*
+- [Rust](systems/rust/README.md)
+- [C](systems/c/README.md)
+- [C++](systems/cpp/README.md)
+- [Java](general/java/README.md)
+- [Python](general/python/README.md)
+- [CUDA](gpu/cuda/README.md)
+- [Go](general/go/README.md) *(suggested)*
+- [SQL](data/sql/README.md) *(suggested)*

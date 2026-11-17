@@ -72,3 +72,11 @@ Start with workshops and arXiv preprints. They are cheaper to enter and give use
 
 ## Files
 - [directions.md](directions.md) — open questions and starting papers, by subject
+
+## My personal take
+
+*These are my own opinions, not a fixed syllabus. Disagree and make your own call.*
+
+- Research is less mysterious than it looks: read widely, pick a narrow question, and write down what you tried, including failures.
+- Start by reproducing a paper. It's the fastest way to see what a claim really depends on.
+- A clear replication, a bug report or a better benchmark is a real contribution.

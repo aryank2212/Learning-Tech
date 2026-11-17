@@ -1,0 +1,8 @@
+.venv/
+target/
+node_modules/
+__pycache__/
+.env
+*.log
+.DS_Store
+notes/private/

@@ -1,6 +1,6 @@
 # Learning-Teach
 
-A structured, self-paced curriculum covering programming languages, computer science fundamentals, mathematics, data, AI, security, systems and the web.
+A structured, self-paced curriculum covering programming languages, computer science fundamentals, mathematics, data, AI, security, systems, engineering practice, emerging computing and the web.
 
 Every subject follows the same pattern:
 
@@ -38,6 +38,8 @@ Every subject follows the same pattern:
 | Computer Networking | [computer-networking](computer-networking/README.md) | OSI/TCP-IP, routing, transport, DNS, network security |
 | Compiler Design | [compiler-design](compiler-design/README.md) | Lexing, parsing, IRs, optimisation, code generation, LLVM |
 | Digital Electronics | [digital-electronics](digital-electronics/README.md) | Logic gates, sequential circuits, Verilog, microcontrollers |
+| Computer Architecture | [computer-architecture](computer-architecture/README.md) | ISA, pipelines, caches, branch prediction, SIMD, GPUs, performance |
+| Theory of Computation | [theory-of-computation](theory-of-computation/README.md) | Automata, formal languages, Turing machines, decidability, complexity classes |
 
 ### Mathematics
 | Subject | Folder | What it covers |
@@ -65,12 +67,19 @@ Every subject follows the same pattern:
 | Blockchain | [blockchain](blockchain/README.md) | Hashing, consensus, smart contracts, contract security (testnets only) |
 | Tech Ethics | [tech-ethics](tech-ethics/README.md) | Frameworks, privacy, fairness, safety, professional codes, case studies |
 
-### Systems & web
+### Systems, engineering & web
 | Subject | Folder | What it covers |
 |---|---|---|
 | System Architecture | [system-architecture](system-architecture/README.md) | Distributed systems, patterns, scaling, operations |
+| Parallel & Distributed Computing | [parallel-distributed-computing](parallel-distributed-computing/README.md) | Threads, OpenMP, MPI, GPUs, consensus, scaling |
+| Software Engineering | [software-engineering](software-engineering/README.md) | Requirements, testing, code review, CI/CD, maintenance, teamwork |
 | Web Technology | [web-technology](web-technology/README.md) | How the web works: HTTP, TLS, browsers, security, performance |
 | Web Development | [web-development](web-development/README.md) | HTML, CSS, JavaScript, React, backends, deployment |
+
+### Emerging computing
+| Subject | Folder | What it covers |
+|---|---|---|
+| Quantum Computing | [quantum-computing](quantum-computing/README.md) | Qubits, entanglement, Grover and Shor, error correction, Qiskit |
 
 ## Suggested learning order
 ```
@@ -78,29 +87,26 @@ Setup ──► one language (Python or C)
             │
             ├──► Maths (logic, linear algebra, calculus, probability)
             │
-            ├──► DSA ──► Operating systems ──► Computer networking
-            │         │                          │
-            │         └──► Compiler design       └──► Web technology ──► Web development
+            ├──► DSA ──► Theory of computation
+            │      │
+            │      ├──► Operating systems ──► Computer networking ──► Web technology ──► Web development
+            │      │          │
+            │      │          └──► Parallel & distributed computing
+            │      │
+            │      └──► Compiler design
             │
-            ├──► Digital electronics (hardware view of computing)
+            ├──► Digital electronics ──► Computer architecture ──► Parallel & distributed computing
+            │
+            ├──► Software engineering (alongside any project from week one)
             │
             ├──► Data science ──► Statistical computing ──► Predictive & big data
-            │                                              │
-            └──► AI/ML ──► Agentic AI ──► Research ◄───────┘
-                             │
-                             └──► Cryptography ──► Blockchain
-                                      │
-                                      └──► Tech ethics (throughout, not only at the end)
+            │
+            ├──► AI/ML ──► Agentic AI ──► Research ◄── (every subject, from the start)
+            │
+            ├──► Cryptography ──► Blockchain ──► Quantum computing (post-quantum link)
+            │
+            └──► Tech ethics (throughout, not only at the end)
 ```
-
-## Suggested additions (not added yet)
-- **Computer architecture** — pipelines, caches and branch prediction; follows digital electronics
-- **Theory of computation** — automata, Turing machines, decidability; follows discrete maths
-- **Software engineering** — testing, design patterns, version control at team scale
-- **Parallel and distributed computing** — MPI, OpenMP, GPU patterns; follows CUDA and system architecture
-- **Quantum computing** — qubits, quantum algorithms, post-quantum crypto links
-
-Tell me which of these you want as new folders.
 
 ## How to use this repo
 - Work through one topic at a time. Do the exercise before reading the next one.
@@ -110,7 +116,7 @@ Tell me which of these you want as new folders.
 
 ## Legend
 - 🆓 free · 💲 paid book or course · ⭐ start here · 🛠️ hands-on project
-- *(suggested)* — a subject I added beyond your list, which you can remove
+- *(suggested)* — a subject I added beyond your original list, which you can remove
 
 ## Contributing
 Add a link or a topic? Edit the file and open a pull request. Link to official docs, well-known authors, and sources you have checked yourself.

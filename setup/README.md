@@ -118,3 +118,20 @@ sudo pacman -S --needed openssl gnupg age r docker docker-compose
 ```
 
 `wrk` (load testing) is in the AUR, not the official repos: `yay -S wrk`.
+
+## 9. Packages for architecture, parallel computing and software engineering
+
+```bash
+# Computer architecture and performance
+sudo pacman -S --needed valgrind perf hwloc numactl
+
+# Parallel computing (OpenMP comes with gcc; MPI and OpenCL here)
+sudo pacman -S --needed openmpi pocl opencl-headers clinfo
+
+# Software engineering
+sudo pacman -S --needed github-cli shellcheck act docker
+uv tool install pre-commit
+uv tool install ruff
+```
+
+Quantum computing and theory of computation use Python packages. Their install steps are in each subject's README.

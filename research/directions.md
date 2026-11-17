@@ -77,3 +77,35 @@ Open questions: auditing algorithms; trade-offs between fairness definitions; ac
 - Buolamwini & Gebru, *Gender Shades* (FAT* 2018)
 - Gebru et al., *Datasheets for Datasets* — [1803.09010](https://arxiv.org/abs/1803.09010)
 - Mitchell et al., *Model Cards for Model Reporting* — [1810.03993](https://arxiv.org/abs/1810.03993)
+
+## Computer architecture
+Open questions: how do we get more performance per watt once Dennard scaling has ended? Which hardware specialisation (accelerators, near-memory compute) pays off for real workloads? How do we secure speculative execution without losing speed?
+- Hennessy & Patterson, *A New Golden Age for Computer Architecture* (CACM, 2019)
+- Smith & Sohi, *The Microarchitecture of Superscalar Processors* (Proceedings of the IEEE, 1995)
+- Jouppi, *Improving Direct-Mapped Cache Performance…* (ISCA 1990)
+
+## Theory of computation
+Open questions: is P different from NP? Where are the limits of approximation? What can be proven about machine learning and learned algorithms? How much of quantum advantage survives realistic noise?
+- Cook, *The Complexity of Theorem-Proving Procedures* (1971)
+- Karp, *Reducibility Among Combinatorial Problems* (1972)
+- Arora & Barak, *Computational Complexity: A Modern Approach* (book)
+
+## Software engineering
+Open questions: how do we measure developer productivity without harming teams? How do we verify AI-written code at scale? What makes large codebases maintainable over decades?
+- Forsgren, Humble, Kim, *Accelerate* (book; the research behind the DORA metrics)
+- Brooks, *No Silver Bullet* (1986)
+- Parnas, *On the Criteria To Be Used in Decomposing Systems into Modules* (1972)
+
+## Parallel and distributed computing
+Open questions: how do we program heterogeneous machines (CPUs, GPUs, accelerators) with one model? How do we make consensus fast without losing safety? How do we test distributed systems for the bugs that only appear under failures?
+- Lamport, *Time, Clocks, and the Ordering of Events in a Distributed System* (1978)
+- Herlihy & Wing, *Linearizability* (1990)
+- Lamport, *The Part-Time Parliament* (1998) — Paxos
+- Gustafson, *Reevaluating Amdahl's Law* (1988)
+
+## Quantum computing
+Open questions: error-corrected qubits at useful scale; practical quantum advantage on real problems; quantum algorithms for machine learning and optimisation; the post-quantum transition for cryptography.
+- Shor (1994) and Grover (1996) — the two foundational algorithms
+- Preskill, *Quantum Computing in the NISQ Era and Beyond* (2018)
+- Farhi, Goldstone, Gutmann, *QAOA* — [1411.4028](https://arxiv.org/abs/1411.4028)
+- NIST FIPS 203, 204, 205 — the post-quantum standards that cryptography is moving to

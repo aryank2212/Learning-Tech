@@ -23,6 +23,8 @@ Tick a box when you can do the topic **without looking it up**, or after you've 
 | Computer networking | | 0 / 10 | ☐ |
 | Compiler design | | 0 / 10 | ☐ |
 | Digital electronics | | 0 / 10 | ☐ |
+| Computer architecture | | 0 / 12 | ☐ |
+| Theory of computation | | 0 / 12 | ☐ |
 
 ## Mathematics
 | Subject | Started | Phases done | Notes |
@@ -55,8 +57,15 @@ Tick a box when you can do the topic **without looking it up**, or after you've 
 | Subject | Started | Phases done | Capstone |
 |---|---|---|---|
 | System architecture | | — | ☐ |
+| Parallel & distributed computing | | 0 / 12 | ☐ |
+| Software engineering | | 0 / 12 | ☐ |
 | Web technology | | 0 / 11 | ☐ |
 | Web development | | 0 / 8 | ☐ |
+
+## Emerging computing
+| Subject | Started | Phases done | Capstone |
+|---|---|---|---|
+| Quantum computing | | 0 / 12 | ☐ |
 
 ## Milestones
 - [ ] Set up the machine from the setup guide

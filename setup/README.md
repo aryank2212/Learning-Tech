@@ -98,3 +98,23 @@ python3 --version && uv --version
 go version && node --version
 nvcc --version || echo "CUDA not installed (optional)"
 ```
+
+## 8. Extra packages for the other subjects
+
+Install only what you need. Each subject's README lists its own commands. Check a name first with `pacman -Ss <name>`.
+
+```bash
+# Languages and core CS
+sudo pacman -S --needed jdk-openjdk maven gradle flex bison llvm graphviz
+
+# Digital electronics and hardware
+sudo pacman -S --needed iverilog gtkwave verilator kicad yosys arduino-cli
+
+# Networking and operating systems
+sudo pacman -S --needed wireshark-qt tcpdump nmap bind mtr iperf3 openbsd-netcat socat qemu-full strace ltrace perf
+
+# Security, statistics and data
+sudo pacman -S --needed openssl gnupg age r docker docker-compose
+```
+
+`wrk` (load testing) is in the AUR, not the official repos: `yay -S wrk`.

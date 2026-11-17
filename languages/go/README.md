@@ -59,3 +59,32 @@ Start a project: `mkdir hello-go && cd hello-go && go mod init example.com/hello
 2. 🛠️ **Concurrent web-status checker** using goroutines
 3. 🛠️ **Chat server** with channels
 4. 🛠️ **Todo REST API** with SQLite
+
+## Study timeline (about 6 weeks)
+| Weeks | Focus | Done when |
+|---|---|---|
+| 1–2 | Level 1: basics | Small command-line programs with tests |
+| 3–4 | Levels 2–3: interfaces and concurrency | A concurrent program that shuts down cleanly |
+| 5–6 | Level 4: real projects | A REST API with a database, in a Docker container |
+
+## Common pitfalls
+- **Goroutine leaks:** a goroutine waits on a channel nobody closes. Use `context` to cancel work.
+- **Ignored errors** (`_ = f()`). Handle them or wrap them with context.
+- **Nil interfaces:** an interface holding a nil pointer is not itself nil.
+- **Slice aliasing:** `append` can overwrite data another slice shares.
+- **Unclosed HTTP response bodies.** Always `defer resp.Body.Close()`.
+
+## Where Go is used
+Docker, Kubernetes, Terraform, Prometheus, Hugo and much of the cloud tooling.
+
+## Ecosystem
+- **Web:** `net/http` (standard library), chi, gin
+- **Database:** `database/sql`, sqlc, GORM
+- **CLI:** cobra
+- **Testing:** `go test`, testify
+
+## More reading
+- *Let's Go* — Alex Edwards (💲)
+- *Concurrency in Go* — Katherine Cox-Buday (💲)
+- [The Go Blog](https://go.dev/blog/)
+- [Go code review comments](https://go.dev/wiki/CodeReviewComments)

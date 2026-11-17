@@ -75,3 +75,35 @@ VS Code: install `ms-python.python` and `ms-python.vscode-pylance`.
 - Use `ruff check` and `ruff format` before committing.
 - Learn to read tracebacks from the bottom up.
 - Start every project with `uv init`, so dependencies stay separate.
+
+## Study timeline (about 8 weeks)
+| Weeks | Focus | Done when |
+|---|---|---|
+| 1–2 | Level 1: basics | A script reads a file and summarises it |
+| 3–4 | Level 2: intermediate | A typed, tested command-line tool |
+| 5–6 | Level 3: practical tools | A small API client with pytest tests |
+| 7–8 | Level 4: data | A notebook analysis of a real dataset with pandas |
+
+## Common pitfalls
+- **Mutable default arguments:** `def f(x=[])` shares one list across calls. Use `None` and create the list inside.
+- **Late binding in closures** created inside loops.
+- **`is` instead of `==`.** `is` compares identity; use `==` to compare values.
+- **Shadowing built-ins** such as `list`, `str` or `input`.
+- **Comparing floats with `==`.** Use `math.isclose`.
+- **Installing into the system Python.** Use a `uv` project for each piece of work.
+
+## Where Python is used
+AI and machine learning (PyTorch, Hugging Face), data science, web backends (FastAPI, Django, Flask), automation, scientific computing, and as the glue language in most engineering teams.
+
+## Ecosystem
+- **Web:** FastAPI, Django, Flask
+- **Testing:** pytest
+- **Data:** pandas, polars, NumPy
+- **Validation:** pydantic
+- **Quality:** ruff (lint and format), mypy (type checks)
+
+## More reading
+- *Effective Python* — Brett Slatkin (💲)
+- *Python Cookbook* — David Beazley & Brian Jones (💲)
+- [PEP 8 — the style guide](https://peps.python.org/pep-0008/)
+- Run `import this` in Python to read the Zen of Python.

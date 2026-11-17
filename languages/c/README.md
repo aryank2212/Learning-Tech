@@ -70,3 +70,34 @@ Always compile with `-Wall -Wextra`. Treat warnings as bugs.
 
 - Use `-fsanitize=address,undefined` to find memory bugs during development.
 - Read the man pages. Most C answers are in them.
+
+## Study timeline (about 10 weeks)
+| Weeks | Focus | Done when |
+|---|---|---|
+| 1–2 | Level 1: basics | Programs with functions and arrays compile with `-Wall -Wextra` and no warnings |
+| 3–4 | Level 2: pointers and memory | You draw the memory for each pointer example, and `valgrind` reports no leaks |
+| 5–6 | Level 3: real programs | A multi-file project built with a Makefile or CMake |
+| 7–8 | Level 4: systems | A shell or socket server runs correctly |
+| 9–10 | Capstone | One of projects 2, 3 or 5, with tests, published |
+
+## Common pitfalls
+- **Off-by-one errors** in loops and string handling. Test the first and last elements.
+- **Forgetting the terminating `'\0'`** when building strings by hand.
+- **Unbounded copies** with `strcpy` or `gets`. Use `snprintf` or length-checked copies.
+- **Uninitialised variables.** Enable `-Wall -Wextra`, and read every `valgrind` report.
+- **Undefined behaviour:** signed overflow, use-after-free, double free, dereferencing NULL.
+
+## Where C is used
+Operating system kernels (Linux, and parts of Windows and BSD), embedded firmware, databases (SQLite), caches (Redis) and language runtimes (CPython).
+
+## Ecosystem
+- **Build:** `make`, CMake, Meson
+- **Debug:** gdb, valgrind, AddressSanitizer (`-fsanitize=address`)
+- **Static analysis:** clang-tidy, cppcheck
+- **Formatting:** clang-format
+
+## More reading
+- [Linux kernel coding style](https://docs.kernel.org/process/coding-style.html)
+- *C Programming: A Modern Approach* — K. N. King (💲)
+- *Expert C Programming* — Peter van der Linden (💲)
+- Read the SQLite source code at [sqlite.org](https://sqlite.org/) — a model of careful C.

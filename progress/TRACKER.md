@@ -1,46 +1,74 @@
 # Progress tracker
 
-Tick a box when you can do the topic **without looking it up** (or after you have built the project).
-
-Update dates when you finish a phase so you can see your pace.
+Tick a box when you can do the topic **without looking it up**, or after you've built the project. Write the date when you finish a phase. The dates show your pace.
 
 ## Languages
-
-| Language | Started | Level 1 | Level 2 | Level 3 | Level 4 | Projects done |
-|----------|---------|---------|---------|---------|---------|---------------|
+| Language | Started | Level 1 | Level 2 | Level 3 | Level 4 | Projects |
+|---|---|---|---|---|---|---|
 | Rust | | ☐ | ☐ | ☐ | ☐ | 0 / 6 |
 | C | | ☐ | ☐ | ☐ | ☐ | 0 / 5 |
 | C++ | | ☐ | ☐ | ☐ | ☐ | 0 / 5 |
+| Java | | ☐ | ☐ | ☐ | ☐ | 0 / 5 |
 | Python | | ☐ | ☐ | ☐ | ☐ | 0 / 6 |
 | CUDA | | ☐ | ☐ | ☐ | ☐ | 0 / 5 |
-| Go | | ☐ | ☐ | ☐ | ☐ | 0 / 4 |
-| SQL | | ☐ | ☐ | ☐ | ☐ | 0 / 3 |
+| Go *(suggested)* | | ☐ | ☐ | ☐ | ☐ | 0 / 4 |
+| SQL *(suggested)* | | ☐ | ☐ | ☐ | ☐ | 0 / 3 |
 
-## AI, LLMs & ML / DL
-- [ ] Math foundations done (linear algebra, calculus, probability)
-- [ ] First ML model trained (scikit-learn)
-- [ ] First neural net written from scratch
-- [ ] First PyTorch model trained on a GPU
-- [ ] Built a transformer or GPT from scratch
-- [ ] Used an LLM API in a project
-- [ ] Built a RAG app
+## Core computer science
+| Subject | Started | Phases done | Capstone |
+|---|---|---|---|
+| DSA (Part A) | | 0 / 8 | ☐ |
+| Advanced DSA (Part B) | | 0 / 6 | ☐ |
+| Operating systems | | 0 / 10 | ☐ |
+| Computer networking | | 0 / 10 | ☐ |
+| Compiler design | | 0 / 10 | ☐ |
+| Digital electronics | | 0 / 10 | ☐ |
 
-## System Architecture
-- [ ] Computer systems basics (CS:APP / OSTEP)
-- [ ] Networking fundamentals
-- [ ] Designed a system on paper for a real problem
-- [ ] Read *Designing Data-Intensive Applications*
-- [ ] Ran a load test and read the metrics
+## Mathematics
+| Subject | Started | Phases done | Notes |
+|---|---|---|---|
+| Engineering maths | | 0 / 9 | |
+| Discrete maths | | 0 / 10 | |
 
-## Web Development
-- [ ] HTML and CSS: built a responsive page
-- [ ] JavaScript: built an interactive app with no framework
-- [ ] React: built a multi-page app
-- [ ] Backend: built a REST API with a database
-- [ ] Deployed a full-stack app
+## Data & statistics
+| Subject | Started | Phases done | Capstone |
+|---|---|---|---|
+| Data science | | 0 / 10 | ☐ |
+| Predictive & big data analytics | | 0 / 10 | ☐ |
+| Statistical computing | | 0 / 10 | ☐ |
+
+## AI
+| Subject | Started | Phases done | Capstone |
+|---|---|---|---|
+| AI, LLMs & ML / DL | | 0 / 9 | ☐ |
+| Agentic AI & orchestration | | 0 / 13 | ☐ |
+| Research | | — | ☐ first paper read |
+
+## Security, trust & ethics
+| Subject | Started | Phases done | Capstone |
+|---|---|---|---|
+| Cryptography | | 0 / 10 | ☐ |
+| Blockchain | | 0 / 11 | ☐ |
+| Tech ethics | | 0 / 12 | ☐ |
+
+## Systems & web
+| Subject | Started | Phases done | Capstone |
+|---|---|---|---|
+| System architecture | | — | ☐ |
+| Web technology | | 0 / 11 | ☐ |
+| Web development | | 0 / 8 | ☐ |
+
+## Milestones
+- [ ] Set up the machine from the setup guide
+- [ ] Wrote and ran a first program in each language I'm learning
+- [ ] Solved 50 DSA problems
+- [ ] Read *OSTEP* or *CS:APP* chapters
+- [ ] Trained a model on a GPU
+- [ ] Built one LLM app with citations
+- [ ] Deployed one full-stack app
+- [ ] Wrote and posted one piece of research or a technical write-up
 
 ## Monthly review
-
 | Month | Focus | What I finished | What I struggled with |
-|-------|-------|-----------------|-----------------------|
+|---|---|---|---|
 | | | | |

@@ -56,3 +56,31 @@ Or practise in the browser at [sqlbolt.com](https://sqlbolt.com) and [sqlzoo.net
 1. 🛠️ **Library database** with books, members and loans
 2. 🛠️ **Sales analysis** with window functions on a public CSV dataset
 3. 🛠️ **Backend for the Go or Rust projects** above
+
+## Study timeline (about 6 weeks)
+| Weeks | Focus | Done when |
+|---|---|---|
+| 1–2 | Level 1: querying | Ten queries on a sample database, without help |
+| 3 | Level 2: relations | Multi-table reports using joins |
+| 4 | Level 3: design | A schema you designed and normalised to 3NF |
+| 5–6 | Level 4: advanced | Window-function analysis, and an index you justify with `EXPLAIN` |
+
+## Common pitfalls
+- **NULL comparisons.** `col = NULL` is never true. Use `IS NULL`.
+- **`SELECT *` in application code.** It breaks when columns change.
+- **Missing indexes** on columns used in joins and `WHERE` clauses.
+- **N+1 queries:** one query per row, usually from an ORM loop.
+- **Timestamps without time zones.** Store timestamps with time zones.
+- **`COUNT(*)` vs `COUNT(column)`.** They treat NULLs differently.
+
+## Where SQL is used
+Almost every application. PostgreSQL, MySQL, SQLite and SQL Server are common databases. BigQuery, Snowflake and DuckDB are used for analytics.
+
+## Ecosystem
+- **PostgreSQL extensions:** PostGIS (maps), pgvector (embeddings), TimescaleDB (time series)
+- **Tools:** `psql`, DBeaver (free GUI), DuckDB (local analytics)
+
+## More reading
+- *The Art of SQL* — Faroult & Robson (💲)
+- *SQL Performance Explained* — Markus Winand (💲)
+- [PostgreSQL Tutorial](https://www.postgresqltutorial.com/)

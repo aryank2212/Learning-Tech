@@ -17,7 +17,8 @@ Learn bottom-up when you can, but you can also design at the top and dig down wh
 No special install. You need:
 
 - A Linux machine (this one works)
-- `sudo pacman -S --needed strace ltrace perf htop iotop wireshark-qt tcpdump dnsutils curl wrk` (for tracing, profiling, network and load tests)
+- `sudo pacman -S --needed strace ltrace perf htop iotop wireshark-qt tcpdump bind curl` (for tracing, profiling, network and load tests)
+- `wrk` for load tests is in the AUR (`yay -S wrk`), not the official repos. `bind` provides `dig`.
 - A free account on a cloud provider for the deployment projects (AWS, Google Cloud or Azure free tiers), or Docker on your machine:
 
 ```bash
@@ -31,3 +32,38 @@ docker run hello-world
 
 - [syllabus.md](syllabus.md) – topics in order, with projects
 - [resources.md](resources.md) – books, courses, papers, tools
+
+## Architecture patterns, briefly
+- **API gateway:** one entry point that routes, authenticates and rate-limits requests.
+- **Backend for frontend (BFF):** one backend per client type, such as web or mobile.
+- **Circuit breaker:** stop calling a failing service for a while, then retry carefully.
+- **Bulkhead:** isolate resources so one failing part can't drain the rest.
+- **Sidecar:** a helper process beside a service, for logging, TLS or retries.
+- **Strangler fig:** replace a legacy system piece by piece, behind a facade.
+- **Saga:** a series of local transactions, each with a compensating action, instead of one distributed transaction.
+- **Outbox:** write events to the same database as the data change, then publish them reliably.
+- **CQRS:** separate models for writes and reads.
+- **Event sourcing:** store every change as an event, and rebuild state by replaying the log.
+- **Change data capture (CDC):** stream database changes to other systems.
+
+## Design document template
+1. Context and goal
+2. Requirements: functional, and non-functional (latency, availability, cost)
+3. Capacity estimates: requests per second, storage, bandwidth
+4. API and data model
+5. High-level diagram
+6. Deep dive on the hardest part
+7. Trade-offs and alternatives considered
+8. Failure modes, and how you would detect them
+9. Monitoring and rollout plan
+
+## Engineering blogs worth reading
+- [Netflix Tech Blog](https://netflixtechblog.com/)
+- [Uber Engineering](https://www.uber.com/blog/engineering/)
+- [Cloudflare Blog](https://blog.cloudflare.com/)
+- [Dropbox Tech Blog](https://dropbox.tech/)
+- [Stripe Engineering](https://stripe.com/blog/engineering)
+- [High Scalability](http://highscalability.com/) — architecture case studies
+
+## Related sections
+[Computer networking](../computer-networking/README.md) · [Operating systems](../operating-systems/README.md) · [Data & big data](../predictive-big-data-analytics/README.md) · [Cryptography](../cryptography/README.md)

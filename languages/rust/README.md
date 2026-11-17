@@ -87,3 +87,40 @@ Work top to bottom. Tick each item in [progress/TRACKER.md](../../progress/TRACK
 - Run `cargo clippy` often; it teaches idiomatic Rust.
 - Read compiler errors fully. Rust's messages often include the fix.
 - Fight the borrow checker for a week, then it starts to help you.
+
+## Study timeline (about 12 weeks, 5–8 hours a week)
+| Weeks | Focus | Done when |
+|---|---|---|
+| 1–2 | Level 1: basics | You write small programs without looking up syntax |
+| 3–4 | Level 2: ownership and borrowing | You can explain a borrow error without looking it up |
+| 5–6 | Level 3: types, traits, iterators | You build a small library with a trait of your own |
+| 7 | Rustlings, all exercises | `rustlings` reports every exercise as done |
+| 8–9 | Level 4: modules, collections, testing | Projects 2 and 3 pass their tests |
+| 10–11 | Level 5: concurrency and async | Project 4 runs on tokio |
+| 12 | Capstone: project 6 | A web API with a database and tests |
+
+## Common pitfalls
+- **Cloning to escape the borrow checker.** Fix the ownership design first. Clone only when it's clearly right.
+- **`unwrap()` everywhere.** Use `?` and return errors. Keep `unwrap()` for tests and invariants you can prove.
+- **`Rc<RefCell<T>>` as a default.** It often means the design needs rethinking.
+- **Ignoring Clippy.** Run `cargo clippy` before each commit.
+
+## Where Rust is used
+The Linux kernel (Rust support since 6.1), Android, AWS (Firecracker), Cloudflare (Pingora), Discord, parts of Windows, and developer tools such as ripgrep, bat and fd. Also WebAssembly and game engines such as Bevy.
+
+## Ecosystem to explore
+- **serde:** serialisation
+- **tokio:** async runtime
+- **axum:** web framework
+- **clap:** command-line parsing
+- **sqlx:** async database access
+- **tracing:** structured logging
+- **criterion:** benchmarking
+
+## More reading
+- [The Rust Reference](https://doc.rust-lang.org/reference/)
+- [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/)
+- [Rust Design Patterns](https://rust-unofficial.github.io/patterns/)
+- [Effective Rust](https://www.lurklurk.org/effective-rust/) — David Drysdale
+- [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/)
+- [This Week in Rust](https://this-week-in-rust.org/)

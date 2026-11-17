@@ -59,7 +59,7 @@ cmake --build build
 | ⭐🆓 | [cppreference.com](https://en.cppreference.com/) | The reference, bookmark it |
 | 🆓 | [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines) | Best practices from Stroustrup and Sutter |
 | 🆓 | [isocpp.org](https://isocpp.org/) | Official community site |
-| 🆓 | [The Cherno – C++ series (YouTube)](https://www.youtube.com/@TheChernoProject) | Good intro videos |
+| 🆓 | The Cherno's C++ series on YouTube (search "The Cherno C++") | Good intro videos |
 | 🆓 | [Compiler Explorer (godbolt.org)](https://godbolt.org/) | See the assembly your code produces |
 | 💲 | *A Tour of C++* – Bjarne Stroustrup | Short tour of modern C++ |
 | 💲 | *Effective Modern C++* – Scott Meyers | Idioms for C++11/14 and beyond |
@@ -77,3 +77,34 @@ cmake --build build
 
 - Use `clang-tidy` and `clang-format` to keep code clean.
 - Read compiler errors top-down; templates make them long. Use `godbolt.org` to test small snippets.
+
+## Study timeline (about 12 weeks)
+| Weeks | Focus | Done when |
+|---|---|---|
+| 1–3 | Level 1: core language | A class with constructors and operators compiles without warnings |
+| 4–6 | Level 2: modern C++ | You write RAII wrappers and can explain each move |
+| 7–8 | Level 3: algorithms and containers | A tested container, and algorithms written with ranges |
+| 9–12 | Level 4 and projects 3–5 | A multi-file CMake project with performance measurements |
+
+## Common pitfalls
+- **Dangling references and iterators.** A `std::vector` reallocation invalidates them.
+- **Object slicing** when a derived object is copied into a base object by value.
+- **Rule of 0, 3 and 5.** If you write a destructor, also think about copy and move operations.
+- **Undefined behaviour** from overflow and out-of-range access. `-fsanitize=undefined` finds many of these.
+- **Template error messages** that run for pages. Read the first error, and the template arguments it names.
+
+## Where C++ is used
+Game engines (Unreal Engine), browsers (Chromium), databases, compilers (LLVM and Clang are written in C++), high-performance computing, graphics drivers (Vulkan, Direct3D) and low-latency finance systems.
+
+## Ecosystem
+- **Package managers:** [vcpkg](https://vcpkg.io/), [Conan](https://conan.io/)
+- **Libraries:** [Boost](https://www.boost.org/), [fmt](https://fmt.dev/), [Qt](https://www.qt.io/)
+- **Testing:** GoogleTest, Catch2
+- **Tools:** clang-format, clang-tidy, CMake
+
+## More reading
+- *A Tour of C++* — Bjarne Stroustrup (💲)
+- *Accelerated C++* — Koenig & Moo (💲)
+- *C++ Primer* — Lippman, Lajoie, Moo (💲)
+- *The C++ Programming Language* — Stroustrup (💲)
+- Talks from CppCon on YouTube — search "CppCon"

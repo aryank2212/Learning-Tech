@@ -55,7 +55,7 @@ Note: CUDA on Arch needs a matching driver. If `nvcc` and `nvidia-smi` disagree,
 
 | | Resource | Notes |
 |---|---|---|
-| ⭐🆓 | [CUDA C++ Programming Guide](https://docs.nvidia.com/cuda/cuda-c-programming-guide/) | Official, the main reference |
+| ⭐🆓 | [CUDA C++ Programming Guide](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html) | Official, the main reference |
 | ⭐🆓 | [CUDA Toolkit documentation](https://docs.nvidia.com/cuda/) | All CUDA docs |
 | 🆓 | [NVIDIA cuda-samples (GitHub)](https://github.com/NVIDIA/cuda-samples) | Working examples to read and modify |
 | 🆓 | [NVIDIA Developer Blog – CUDA posts](https://developer.nvidia.com/blog/) | Optimisation articles |
@@ -77,3 +77,33 @@ Note: CUDA on Arch needs a matching driver. If `nvcc` and `nvidia-smi` disagree,
 - Use `compute-sanitizer` to find memory errors in kernels.
 - Measure before optimising. Use Nsight Systems first.
 - A kernel with a bug can silently produce wrong numbers. Always test against a CPU version.
+
+## Study timeline (about 8 weeks, after C++ basics)
+| Weeks | Focus | Done when |
+|---|---|---|
+| 1–2 | Level 1: the GPU model | Vector add runs and matches the CPU result |
+| 3–4 | Level 2: performance | Matrix multiply, naive and tiled, with timings |
+| 5–6 | Level 3: libraries | A cuBLAS call and a stream pipeline |
+| 7–8 | Level 4: advanced | A custom PyTorch op, profiled with Nsight |
+
+## Common pitfalls
+- **Race conditions:** threads writing the same memory without synchronisation or atomics.
+- **Uncoalesced memory access:** neighbouring threads should read neighbouring addresses.
+- **Ignoring errors.** Check every CUDA call, and call `cudaGetLastError()` after each kernel launch.
+- **Too many CPU–GPU copies.** Keep data on the GPU as long as you can.
+- **Branch divergence** inside a warp.
+- **Bad timing:** measure after warm-up runs, and synchronise before reading the clock.
+
+## Where CUDA is used
+Deep learning (PyTorch and TensorFlow use it under the hood), scientific simulation, medical imaging, signal processing and computer graphics.
+
+## Ecosystem
+- **Libraries:** cuBLAS, cuFFT, cuRAND, Thrust, cuDNN
+- **Higher level:** CUTLASS, Triton, Numba CUDA, CuPy
+- **Tools:** Nsight Systems, Nsight Compute, compute-sanitizer
+
+## More reading
+- [CUDA C++ Best Practices Guide](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/)
+- [CUTLASS](https://github.com/NVIDIA/cutlass) — how NVIDIA writes fast matrix kernels
+- [CuPy](https://cupy.dev/) and [Numba CUDA](https://numba.readthedocs.io/en/stable/cuda/index.html) — GPU code from Python
+- *GPU Gems* (NVIDIA, free online) — search the title

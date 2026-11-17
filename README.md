@@ -1,4 +1,4 @@
-# Learnin-Tech
+# Learning-Tech
 
 A structured, self-paced curriculum covering programming languages, computer science fundamentals, mathematics, data, AI, security, systems, engineering practice, emerging computing and the web.
 

@@ -125,6 +125,18 @@ The Linux kernel (Rust support since 6.1), Android, AWS (Firecracker), Cloudflar
 - [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/)
 - [This Week in Rust](https://this-week-in-rust.org/)
 
+## Libraries for data, ML and AI
+- **Arrays and data:** `ndarray` (like NumPy), `polars` (DataFrames)
+- **Classical ML:** `linfa`, `smartcore`
+- **Deep learning:** `burn`, `candle`
+- **Using PyTorch and ONNX models:** `tch`, `ort`, `tract`
+- **Text:** `tokenizers`
+
+```bash
+cargo add ndarray polars linfa
+```
+The Rust ML ecosystem is young and changes quickly, so check release notes. More in [ML libraries in other languages](../../../ai/frameworks/ml-libraries-other-languages/README.md#rust).
+
 ## My personal take
 
 *These are my own opinions, not a fixed syllabus. Disagree and make your own call.*

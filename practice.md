@@ -55,6 +55,10 @@ Each subject folder has its own `practice.md`. Start at Level 1 even if the subj
 ### AI
 
 - [AI, LLMs & Machine / Deep Learning](ai/machine-learning/ai-ml/practice.md)
+- [scikit-learn](ai/frameworks/scikit-learn/practice.md)
+- [PyTorch](ai/frameworks/pytorch/practice.md)
+- [TensorFlow and Keras](ai/frameworks/tensorflow/practice.md)
+- [ML Libraries in Other Languages](ai/frameworks/ml-libraries-other-languages/practice.md)
 - [Agentic AI & Orchestration](ai/agents/agentic-ai/practice.md)
 - [Research](research/practice.md)
 

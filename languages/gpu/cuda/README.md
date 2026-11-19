@@ -108,6 +108,14 @@ Deep learning (PyTorch and TensorFlow use it under the hood), scientific simulat
 - [CuPy](https://cupy.dev/) and [Numba CUDA](https://numba.readthedocs.io/en/stable/cuda/index.html) — GPU code from Python
 - *GPU Gems* (NVIDIA, free online) — search the title
 
+## Libraries for data, ML and AI
+- **Maths on the GPU:** cuBLAS, cuFFT, cuRAND, cuSOLVER, Thrust
+- **Deep learning:** cuDNN, CUTLASS, Triton, NCCL for many GPUs. PyTorch ([guide](../../../ai/frameworks/pytorch/README.md)) and TensorFlow ([guide](../../../ai/frameworks/tensorflow/README.md)) call these for you.
+- **GPU data science:** RAPIDS (cuDF for DataFrames, cuML for scikit-learn-style models), CuPy for NumPy on the GPU
+- **Inference:** TensorRT
+
+You rarely need raw CUDA for machine learning. Reach for it when a framework doesn't have the operation you need.
+
 ## My personal take
 
 *These are my own opinions, not a fixed syllabus. Disagree and make your own call.*

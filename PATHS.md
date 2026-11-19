@@ -37,14 +37,18 @@ Eight guided tracks through Learning-Tech. Each lists the subjects in order, the
 
 ## 3. AI engineer
 
-**Time:** about 6–9 months. **For you if:** You want to build applications on top of machine learning and language models.
+**Time:** about 7–10 months. **For you if:** You want to build applications on top of machine learning and language models.
 
 1. **[Python](languages/general/python/README.md)** — Levels 1–3. *Checkpoint:* a typed, tested tool.
 2. **[Maths](foundations/mathematics/maths/README.md)** — Linear algebra, calculus and probability phases. *Checkpoint:* gradient descent in NumPy.
 3. **[Data science](data/science/data-science/README.md)** — Phases 1–7. *Checkpoint:* an end-to-end prediction project.
-4. **[AI, LLMs and ML](ai/machine-learning/ai-ml/README.md)** — Phases 0–5. *Checkpoint:* a neural net from scratch, then in PyTorch.
-5. **[Agentic AI and orchestration](ai/agents/agentic-ai/README.md)** — Phases 1–9. *Checkpoint:* an agent with tools and an evaluation set.
-6. **[Research](research/README.md)** — Reading papers and reproducing a result. *Checkpoint:* a reproduced table from one paper.
+4. **[scikit-learn](ai/frameworks/scikit-learn/README.md)** — Phases 1–6. *Checkpoint:* a leakage-safe pipeline with an honest test score.
+5. **[PyTorch](ai/frameworks/pytorch/README.md)** — Phases 1–8. *Checkpoint:* a model trained on your own data, with a validation curve.
+6. **[AI, LLMs and ML](ai/machine-learning/ai-ml/README.md)** — Phases 3–5. *Checkpoint:* a small GPT, then an app built on an LLM API.
+7. **[Agentic AI and orchestration](ai/agents/agentic-ai/README.md)** — Phases 1–9. *Checkpoint:* an agent with tools and an evaluation set.
+8. **[Research](research/README.md)** — Reading papers and reproducing a result. *Checkpoint:* a reproduced table from one paper.
+
+Optional: **[TensorFlow and Keras](ai/frameworks/tensorflow/README.md)** if your stack deploys to phones or browsers, and **[ML libraries in other languages](ai/frameworks/ml-libraries-other-languages/README.md)** when you need to run models outside Python.
 
 **Capstone:** A retrieval-based assistant with citations, an evaluation set, and a short report on where it fails.
 
@@ -92,7 +96,8 @@ Eight guided tracks through Learning-Tech. Each lists the subjects in order, the
 2. **[SQL](languages/data/sql/README.md)** — Levels 1–4. *Checkpoint:* a window-function report.
 3. **[Data science](data/science/data-science/README.md)** — Phases 1–10. *Checkpoint:* a dashboard and a written report.
 4. **[Statistical computing](data/statistics/statistical-computing/README.md)** — Phases 1–7. *Checkpoint:* a bootstrap and a regression with diagnostics.
-5. **[Predictive and big data analytics](data/analytics/predictive-big-data-analytics/README.md)** — Phases 1–5. *Checkpoint:* a backtested forecast.
+5. **[scikit-learn](ai/frameworks/scikit-learn/README.md)** — Phases 1–6. *Checkpoint:* a leakage-safe pipeline with an honest test score.
+6. **[Predictive and big data analytics](data/analytics/predictive-big-data-analytics/README.md)** — Phases 1–5. *Checkpoint:* a backtested forecast.
 
 **Capstone:** A public project that takes a real dataset from question to recommendation, with the code and the report.
 

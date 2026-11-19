@@ -108,6 +108,18 @@ AI and machine learning (PyTorch, Hugging Face), data science, web backends (Fas
 - [PEP 8 — the style guide](https://peps.python.org/pep-0008/)
 - Run `import this` in Python to read the Zen of Python.
 
+## Libraries for data, ML and AI
+- **Arrays and data:** NumPy, pandas, Polars, DuckDB
+- **Plots:** Matplotlib, Seaborn, Plotly
+- **Classical ML:** scikit-learn ([guide](../../../ai/frameworks/scikit-learn/README.md)), XGBoost, LightGBM
+- **Deep learning:** PyTorch ([guide](../../../ai/frameworks/pytorch/README.md)), TensorFlow and Keras ([guide](../../../ai/frameworks/tensorflow/README.md)), JAX
+- **Language models and agents:** Hugging Face Transformers, then [agentic AI](../../../ai/agents/agentic-ai/README.md)
+- **Sharing models:** ONNX Runtime and FastAPI (see [ML libraries in other languages](../../../ai/frameworks/ml-libraries-other-languages/README.md))
+
+```bash
+uv add numpy pandas matplotlib scikit-learn
+```
+
 ## My personal take
 
 *These are my own opinions, not a fixed syllabus. Disagree and make your own call.*

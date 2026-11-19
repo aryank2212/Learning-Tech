@@ -8,7 +8,8 @@ It checks that:
 - every subject folder has the required files (README, syllabus, resources, practice, ...)
 - every subject README has a "My personal take" section and is linked from the root README
 - every practice.md has three levels and a quick quiz
-- every relative Markdown link and heading anchor resolves
+- every relative Markdown link and heading anchor resolves (repeated headings and code blocks handled)
+- every Python file (examples and scripts) compiles
 - no PDFs, no library/ files and no oversized files are tracked by git
 """
 import os, re, subprocess, sys
@@ -87,9 +88,19 @@ for dirpath, dirnames, filenames in os.walk("."):
     for fn in filenames:
         if fn.endswith(".md"):
             md_files.append(os.path.normpath(os.path.join(dirpath, fn)))
-anchors = {}
-for f in md_files:
-    anchors[f] = {slug(m.group(1)) for line in read(f).splitlines() for m in [re.match(r"^#{1,6}\s+(.*)", line)] if m}
+def heading_anchors(text):
+    """GitHub-style anchors: repeated headings get -1, -2, ... and code blocks are ignored."""
+    seen, found = {}, set()
+    for line in re.sub(r"```.*?```", "", text, flags=re.S).splitlines():
+        m = re.match(r"^#{1,6}\s+(.*)", line)
+        if m:
+            base = slug(m.group(1))
+            n = seen.get(base, 0)
+            seen[base] = n + 1
+            found.add(base if n == 0 else f"{base}-{n}")
+    return found
+
+anchors = {f: heading_anchors(read(f)) for f in md_files}
 checked = 0
 for f in md_files:
     base = os.path.dirname(f)
@@ -106,6 +117,19 @@ for f in md_files:
         elif anchor and tpath.endswith(".md") and anchor not in anchors.get(tpath, set()):
             errors.append(f"{f}: missing anchor -> {link}")
 
+# ---- example scripts must at least compile ----
+compiled = 0
+for dirpath, dirnames, filenames in os.walk("."):
+    dirnames[:] = [d for d in dirnames if d not in (".git", "library", "node_modules", "out", "__pycache__")]
+    for fn in filenames:
+        if fn.endswith(".py"):
+            path = os.path.normpath(os.path.join(dirpath, fn))
+            try:
+                compile(read(path), path, "exec")
+                compiled += 1
+            except SyntaxError as e:
+                errors.append(f"{path}: syntax error: {e}")
+
 # ---- git hygiene ----
 try:
     tracked = subprocess.run(["git", "ls-files"], capture_output=True, text=True, check=True).stdout.splitlines()
@@ -119,7 +143,7 @@ try:
 except Exception:
     print("note: git not available, skipped git hygiene checks")
 
-print(f"subjects checked: {len(subject_paths)}   markdown files: {len(md_files)}   internal links: {checked}")
+print(f"subjects checked: {len(subject_paths)}   markdown files: {len(md_files)}   internal links: {checked}   python files compiled: {compiled}")
 if errors:
     print(f"\n{len(errors)} problem(s):")
     for e in errors:

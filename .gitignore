@@ -9,3 +9,6 @@ notes/private/
 
 # Local-only copies of third-party books and papers (copyright). Rebuild with scripts/fetch-library.sh
 library/
+
+# Output written by the example scripts
+**/examples/out/

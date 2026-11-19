@@ -2,6 +2,13 @@
 
 All notable changes to Learning-Tech. Newest first.
 
+## 2026-11-19 — ML frameworks
+- Added four guides under `ai/frameworks/`: scikit-learn, PyTorch, TensorFlow and Keras, and ML libraries in other languages (Rust, C and C++, Java, Go, JavaScript, R, Julia, C#, mobile and ONNX).
+- Added 12 runnable, tested example scripts (scikit-learn, PyTorch, TensorFlow and Keras, and an ONNX export and parity check that runs from Node.js).
+- A "Libraries for data, ML and AI" section on every language page.
+- New glossary terms, learning-path steps, FAQ answers, tutorials, practice sets and tracker rows.
+- The repo checker now compiles every example script and understands repeated headings in anchors.
+
 ## 2026-11-19 — Quizzes, paths, glossary and automation
 - Added quick quizzes with answers to every `practice.md`.
 - Added [PATHS.md](PATHS.md) (guided learning tracks), [GLOSSARY.md](GLOSSARY.md) and [LIBRARY.md](LIBRARY.md).

@@ -109,6 +109,17 @@ Game engines (Unreal Engine), browsers (Chromium), databases, compilers (LLVM an
 - *The C++ Programming Language* — Stroustrup (💲)
 - Talks from CppCon on YouTube — search "CppCon"
 
+## Libraries for data, ML and AI
+- **Linear algebra:** Eigen, Armadillo, xtensor
+- **Classical ML:** mlpack, dlib
+- **Running models:** LibTorch (PyTorch's C++ API), ONNX Runtime, OpenCV's `dnn` module, TensorRT on NVIDIA GPUs
+- **Language models:** llama.cpp and ggml
+
+```bash
+sudo pacman -S eigen opencv dlib xtensor armadillo openblas
+```
+mlpack, ONNX Runtime and llama.cpp aren't in the official Arch repos; use their releases or build from source. More in [ML libraries in other languages](../../../ai/frameworks/ml-libraries-other-languages/README.md#c).
+
 ## My personal take
 
 *These are my own opinions, not a fixed syllabus. Disagree and make your own call.*

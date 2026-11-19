@@ -7,6 +7,9 @@ Short definitions of terms used across Learning-Tech, with a pointer to where ea
 - **Amdahl's law** — The serial part of a program limits how much parallel hardware can speed it up. *See: [Parallel computing](systems/distributed/parallel-distributed-computing/README.md).*
 - **API** — A defined way for programs to talk to each other. *See: [Web technology](web/fundamentals/web-technology/README.md).*
 - **Attention** — A mechanism that lets each token weigh and combine information from other tokens. *See: [AI/ML](ai/machine-learning/ai-ml/README.md).*
+- **Autograd** — Automatic differentiation: the framework records operations and computes gradients for you. *See: [PyTorch](ai/frameworks/pytorch/README.md).*
+- **Backpropagation** — The algorithm that computes how much each weight contributed to the loss, using the chain rule. *See: [AI/ML](ai/machine-learning/ai-ml/README.md).*
+- **Batch** — A group of examples processed together in one training step. *See: [AI/ML](ai/machine-learning/ai-ml/README.md).*
 - **Big-O notation** — Describes how running time or memory grows with the size of the input. *See: [DSA](foundations/algorithms/dsa/README.md).*
 - **Blockchain** — An append-only ledger copied across many computers that agree on its contents by consensus. *See: [Blockchain](security/ledgers/blockchain/README.md).*
 - **Cache** — Small, fast memory that holds recently used data to save trips to slower memory. *See: [Computer architecture](foundations/hardware/computer-architecture/README.md).*
@@ -29,16 +32,19 @@ Short definitions of terms used across Learning-Tech, with a pointer to where ea
 - **Embedding** — A vector that represents text, an image or another item. *See: [AI/ML](ai/machine-learning/ai-ml/README.md).*
 - **Entanglement** — A quantum correlation between qubits that can't be described one at a time. *See: [Quantum computing](emerging/quantum/quantum-computing/README.md).*
 - **Epoch** — One full pass through the training data. *See: [AI/ML](ai/machine-learning/ai-ml/README.md).*
+- **Estimator (scikit-learn)** — Any scikit-learn object that learns from data with `fit`, such as a model or a scaler. *See: [scikit-learn](ai/frameworks/scikit-learn/README.md).*
 - **Fine-tuning** — Further training a pretrained model on your own data. *See: [AI/ML](ai/machine-learning/ai-ml/README.md).*
 - **Flip-flop** — A circuit element that stores one bit and changes on a clock edge. *See: [Digital electronics](foundations/hardware/digital-electronics/README.md).*
 - **Forward secrecy** — Past sessions stay secret even if long-term keys are leaked later. *See: [Cryptography](security/cryptography/cryptography/README.md).*
 - **Gradient descent** — Optimisation by repeatedly stepping against the gradient of the loss. *See: [AI/ML](ai/machine-learning/ai-ml/README.md).*
 - **Hash table** — A data structure that maps keys to values using a hash function. *See: [DSA](foundations/algorithms/dsa/README.md).*
 - **HTTP** — The protocol that web browsers and servers use to talk. *See: [Web technology](web/fundamentals/web-technology/README.md).*
+- **Hyperparameter** — A setting you choose before training, such as a learning rate, rather than one the model learns. *See: [scikit-learn](ai/frameworks/scikit-learn/README.md).*
 - **Idempotent** — Doing it twice has the same effect as doing it once, which makes retries safe. *See: [System architecture](systems/architecture/system-architecture/README.md).*
 - **Index (database)** — A structure that speeds up lookups at the cost of storage and slower writes. *See: [SQL](languages/data/sql/README.md).*
 - **Interpreter** — A program that runs source code directly, without producing a separate executable. *See: [Compiler design](software/compilers/compiler-design/README.md).*
 - **JIT compilation** — Compiling code to machine code while the program is running. *See: [Compiler design](software/compilers/compiler-design/README.md).*
+- **Keras** — A high-level API for building and training neural networks; Keras 3 runs on TensorFlow, JAX or PyTorch. *See: [TensorFlow and Keras](ai/frameworks/tensorflow/README.md).*
 - **Kernel** — The core of an operating system, which manages hardware, memory and processes. *See: [Operating systems](systems/kernels/operating-systems/README.md).*
 - **Latency** — The time one operation takes. *See: [System architecture](systems/architecture/system-architecture/README.md).*
 - **LLM** — Large language model: a neural network trained to predict text. *See: [AI/ML](ai/machine-learning/ai-ml/README.md).*
@@ -50,12 +56,15 @@ Short definitions of terms used across Learning-Tech, with a pointer to where ea
 - **Normalisation** — Organising a database to reduce duplicated data. *See: [SQL](languages/data/sql/README.md).*
 - **NP-complete** — The hardest problems in NP: a fast algorithm for one would give a fast algorithm for all. *See: [Theory of computation](foundations/theory/theory-of-computation/README.md).*
 - **OAuth** — A standard for letting an app act on your behalf without sharing your password. *See: [Web technology](web/fundamentals/web-technology/README.md).*
+- **ONNX** — An open file format for trained models, so they can run in other frameworks, runtimes and languages. *See: [ML libraries in other languages](ai/frameworks/ml-libraries-other-languages/README.md).*
 - **Overfitting** — A model fits its training data too closely and does badly on new data. *See: [AI/ML](ai/machine-learning/ai-ml/README.md).*
 - **Page table** — The structure that maps virtual memory pages to physical memory. *See: [Operating systems](systems/kernels/operating-systems/README.md).*
 - **Parquet** — A columnar file format that makes analytics queries efficient. *See: [Big data](data/analytics/predictive-big-data-analytics/README.md).*
 - **Pipeline (CPU)** — Overlapping the stages of several instructions to raise throughput. *See: [Computer architecture](foundations/hardware/computer-architecture/README.md).*
+- **Pipeline (scikit-learn)** — A chain of preprocessing steps and a model that is fit together, which prevents data leakage. *See: [scikit-learn](ai/frameworks/scikit-learn/README.md).*
 - **Post-quantum cryptography** — Algorithms designed to stay secure against quantum computers. *See: [Cryptography](security/cryptography/cryptography/README.md).*
 - **Prompt injection** — Untrusted text that tries to take over a model's instructions. *See: [Agentic AI](ai/agents/agentic-ai/README.md).*
+- **Quantisation** — Storing a model's numbers in fewer bits to make it smaller and faster, at some cost in accuracy. *See: [ML libraries in other languages](ai/frameworks/ml-libraries-other-languages/README.md).*
 - **Qubit** — A quantum bit, which can be in a superposition of 0 and 1. *See: [Quantum computing](emerging/quantum/quantum-computing/README.md).*
 - **Race condition** — A bug where the result depends on the timing of unsynchronised accesses. *See: [Parallel computing](systems/distributed/parallel-distributed-computing/README.md).*
 - **Raft** — A consensus algorithm designed to be easy to understand. *See: [System architecture](systems/architecture/system-architecture/README.md).*
@@ -69,10 +78,13 @@ Short definitions of terms used across Learning-Tech, with a pointer to where ea
 - **SQL injection** — An attack that inserts SQL commands through untrusted input. *See: [Web technology](web/fundamentals/web-technology/README.md).*
 - **SSA** — Static single assignment: a compiler form where each variable is assigned exactly once. *See: [Compiler design](software/compilers/compiler-design/README.md).*
 - **TCP** — The reliable, ordered byte-stream transport protocol. *See: [Networking](systems/networks/computer-networking/README.md).*
+- **Tensor** — A multi-dimensional array of numbers, the basic data type of deep-learning frameworks. *See: [PyTorch](ai/frameworks/pytorch/README.md).*
+- **`tf.function`** — A TensorFlow decorator that traces Python code into a graph for speed and export. *See: [TensorFlow and Keras](ai/frameworks/tensorflow/README.md).*
 - **Thread** — A unit of execution inside a process. *See: [Operating systems](systems/kernels/operating-systems/README.md).*
 - **TLB** — A small cache of recent virtual-to-physical address translations. *See: [Computer architecture](foundations/hardware/computer-architecture/README.md).*
 - **TLS** — The protocol that secures connections, such as HTTPS. *See: [Cryptography](security/cryptography/cryptography/README.md).*
 - **Token (LLM)** — The unit of text a language model reads and writes, often part of a word. *See: [AI/ML](ai/machine-learning/ai-ml/README.md).*
+- **Transfer learning** — Starting from a pretrained model and fine-tuning it for your own task. *See: [PyTorch](ai/frameworks/pytorch/README.md).*
 - **Transformer** — A neural-network architecture built on attention. *See: [AI/ML](ai/machine-learning/ai-ml/README.md).*
 - **Virtual memory** — Giving each process its own address space, mapped onto physical memory. *See: [Operating systems](systems/kernels/operating-systems/README.md).*
 - **WebAssembly** — A portable binary format that runs in browsers (and elsewhere) at near-native speed. *See: [Web technology](web/fundamentals/web-technology/README.md).*

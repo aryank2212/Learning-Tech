@@ -102,6 +102,16 @@ Operating system kernels (Linux, and parts of Windows and BSD), embedded firmwar
 - *Expert C Programming* — Peter van der Linden (💲)
 - Read the SQLite source code at [sqlite.org](https://sqlite.org/) — a model of careful C.
 
+## Libraries for data, ML and AI
+- **Linear algebra:** BLAS and LAPACK (OpenBLAS), the GNU Scientific Library (GSL)
+- **Inference:** ggml, the C tensor library under llama.cpp
+- **Small teaching libraries:** genann, kann; Darknet for YOLO
+
+```bash
+sudo pacman -S openblas lapack gsl
+```
+More in [ML libraries in other languages](../../../ai/frameworks/ml-libraries-other-languages/README.md#plain-c).
+
 ## My personal take
 
 *These are my own opinions, not a fixed syllabus. Disagree and make your own call.*

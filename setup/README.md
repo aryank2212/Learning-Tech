@@ -135,3 +135,7 @@ uv tool install ruff
 ```
 
 Quantum computing and theory of computation use Python packages. Their install steps are in each subject's README.
+
+## 10. Machine-learning libraries
+
+scikit-learn, PyTorch and TensorFlow are installed per project with `uv`, not with `pacman`, so each project keeps its own versions. The install recipes (CPU only, NVIDIA GPU, Apple Silicon) are in the [framework guides](../ai/frameworks/README.md). Install PyTorch and TensorFlow in separate projects, because their GPU libraries differ.

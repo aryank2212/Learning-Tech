@@ -25,6 +25,9 @@ Also worth considering later: **TypeScript** (see [web development](../web/build
 | Typical use | AI, scripting, web | OS, embedded | Games, engines, HPC | Systems, CLIs, backends | Enterprise, big data | GPU compute | Servers, cloud | Databases |
 | Speed | Slow | Fast | Fast | Fast | Fast | Very fast (GPU) | Fast | n/a |
 
+## Libraries
+Every language page has a **Libraries for data, ML and AI** section. For the full picture of machine-learning libraries across languages, and how to run one trained model from any of them, see the [ML framework guides](../ai/frameworks/README.md).
+
 ## Folders
 - [Rust](systems/rust/README.md)
 - [C](systems/c/README.md)

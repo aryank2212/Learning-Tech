@@ -23,6 +23,20 @@ jobs:
       - name: Run the repository checks
         run: python scripts/check_repo.py
 
+  sklearn-examples:
+    name: scikit-learn and ONNX examples
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10.3.3
+      - name: Run the lightweight examples
+        # The PyTorch and TensorFlow examples download large wheels, so they are tested by hand.
+        run: |
+          for f in ai/frameworks/scikit-learn/examples/*.py; do
+            echo "== $f"; uv run "$f"
+          done
+          uv run ai/frameworks/ml-libraries-other-languages/examples/01_sklearn_to_onnx.py
+
   external-links:
     name: External links (weekly)
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'

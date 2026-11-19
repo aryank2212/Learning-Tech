@@ -43,6 +43,10 @@ Tick a box when you can do the topic **without looking it up**, or after you've 
 | Subject | Started | Phases done | Capstone | Practice (easy / medium / hard) |
 |---|---|---|---|---|
 | [AI, LLMs & ML / DL](../ai/machine-learning/ai-ml/README.md) | | 0 / 9 | ☐ | ☐ ☐ ☐ |
+| [scikit-learn](../ai/frameworks/scikit-learn/README.md) | | 0 / 10 | ☐ | ☐ ☐ ☐ |
+| [PyTorch](../ai/frameworks/pytorch/README.md) | | 0 / 12 | ☐ | ☐ ☐ ☐ |
+| [TensorFlow and Keras](../ai/frameworks/tensorflow/README.md) | | 0 / 12 | ☐ | ☐ ☐ ☐ |
+| [ML libraries in other languages](../ai/frameworks/ml-libraries-other-languages/README.md) | | 0 / 10 | ☐ | ☐ ☐ ☐ |
 | [Agentic AI & orchestration](../ai/agents/agentic-ai/README.md) | | 0 / 13 | ☐ | ☐ ☐ ☐ |
 | [Research](../research/README.md) | | — | ☐ first paper read | ☐ ☐ ☐ |
 

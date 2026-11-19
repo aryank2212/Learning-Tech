@@ -141,3 +141,21 @@ Yes, and it's on the roadmap. Open an issue so we don't duplicate work.
 
 **What if someone behaves badly in an issue?**
 Read the [Code of Conduct](CODE_OF_CONDUCT.md). You can report a problem by opening an issue marked as a conduct concern or by contacting the maintainer on GitHub.
+
+**Should I learn PyTorch or TensorFlow?**
+PyTorch first, for most people: most research code and open models use it, and it reads like ordinary Python. Learn TensorFlow and Keras when your job or stack uses them, or when you need LiteRT (phones), TensorFlow.js (browsers) or TensorFlow Serving. Keras 3 also runs on PyTorch and JAX. See the [framework guides](ai/frameworks/README.md).
+
+**Do I still need scikit-learn if I'm going to use PyTorch?**
+Yes. For spreadsheet-style data, scikit-learn and gradient boosting often beat neural networks, and scikit-learn teaches the whole workflow (split, pipeline, evaluate, tune) on problems small enough to understand. Learn it first.
+
+**Which Python version should I use for machine learning?**
+At the time of writing, Python 3.13 works with scikit-learn, PyTorch and TensorFlow. TensorFlow doesn't support the newest Python straight away, so check before you upgrade.
+
+**Do I need a GPU for PyTorch or TensorFlow?**
+No. Every example in the framework guides runs on a CPU. Use the CPU install recipes, and use free Colab or Kaggle GPUs when a project needs one.
+
+**Can I do machine learning in Rust, Java, Go or JavaScript?**
+Yes, especially for running trained models and for classical ML. Training big models is still mostly done in Python. The usual pattern is to train in Python, export to ONNX, and run the model from your language. See [ML libraries in other languages](ai/frameworks/ml-libraries-other-languages/README.md).
+
+**How do I run the example scripts?**
+Each script declares its dependencies, so `uv run path/to/script.py` is enough. TensorFlow examples need Python 3.13 or older: `uv run --python 3.13 path/to/script.py`. On Linux, the default PyTorch download includes CUDA and is large; follow the CPU recipe in the PyTorch guide if you don't have an NVIDIA GPU.

@@ -76,6 +76,7 @@ No GPU? Use **Google Colab** (free GPU) or **Kaggle Notebooks** to follow the co
 - [Hugging Face Datasets](https://huggingface.co/datasets)
 - [PyTorch tutorials](https://pytorch.org/tutorials/)
 - [Distill.pub](https://distill.pub/) — visual explanations of ML (archived, still excellent)
+- Framework guides: [scikit-learn](../../frameworks/scikit-learn/README.md), [PyTorch](../../frameworks/pytorch/README.md), [TensorFlow and Keras](../../frameworks/tensorflow/README.md), [ML libraries in other languages](../../frameworks/ml-libraries-other-languages/README.md)
 - Related sections: [agentic AI](../../agents/agentic-ai/README.md), [research](../../../research/README.md), [tech ethics](../../../security/ethics/tech-ethics/README.md)
 
 ## My personal take

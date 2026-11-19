@@ -60,8 +60,9 @@ Start with ⭐ items. Free resources are first in each section.
 
 | Tool | What it's for | Link |
 |------|---------------|------|
-| PyTorch | Deep learning research and production | https://pytorch.org |
-| scikit-learn | Classical ML | https://scikit-learn.org |
+| PyTorch | Deep learning research and production | https://pytorch.org · [guide](../../frameworks/pytorch/README.md) |
+| scikit-learn | Classical ML | https://scikit-learn.org · [guide](../../frameworks/scikit-learn/README.md) |
+| TensorFlow and Keras | Deep learning with strong deployment tools | https://www.tensorflow.org · https://keras.io · [guide](../../frameworks/tensorflow/README.md) |
 | Hugging Face | Models, datasets, training | https://huggingface.co |
 | Weights & Biases | Experiment tracking | https://wandb.ai |
 | LangChain / LlamaIndex | LLM app frameworks (optional, learn the basics first) | https://python.langchain.com · https://www.llamaindex.ai |

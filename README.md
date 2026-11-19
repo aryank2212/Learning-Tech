@@ -126,6 +126,26 @@ From "what is a model" to building and running your own large language model.
 
 > **My take:** Learn enough maths to read a training loop, then build models. I'd rather you train a small network from scratch than memorise architectures.
 
+### [scikit-learn](ai/frameworks/scikit-learn/README.md)
+The standard Python library for classical machine learning: preprocessing, models for classification, regression and clustering, and the tools to evaluate and tune them.
+
+> **My take:** Learn this before deep learning. It teaches the whole workflow (split, pipeline, evaluate, tune) on problems small enough to understand.
+
+### [PyTorch](ai/frameworks/pytorch/README.md)
+The most widely used framework for deep learning research and for open models.
+
+> **My take:** PyTorch is my pick for deep learning. It's the one I'd learn first, because the code, the debugging and most of the models you'll want all live there.
+
+### [TensorFlow and Keras](ai/frameworks/tensorflow/README.md)
+Google's machine-learning platform: Keras for building and training models, TensorFlow for serving them, shrinking them for phones and running them in browsers.
+
+> **My take:** Honestly: PyTorch is where most research and open models live, and I'd learn it first. TensorFlow and Keras still make sense when your stack uses them, or when you target phones with LiteRT, browsers with TensorFlow.js, or TensorFlow Serving.
+
+### [ML Libraries in Other Languages](ai/frameworks/ml-libraries-other-languages/README.md)
+Machine-learning libraries beyond Python (Rust, C and C++, Java, Go, JavaScript, R, Julia and C#), and how to run one trained model from any of them.
+
+> **My take:** Train in Python and ship wherever you need. ONNX makes that easy now, and it saves you from rewriting training code in a language with a much thinner ecosystem.
+
 ### [Agentic AI & Orchestration](ai/agents/agentic-ai/README.md)
 Building AI systems that plan, use tools, remember things and finish multi-step work.
 
@@ -224,7 +244,7 @@ Doing research in AI and every other subject.
 - [tutorial.md](tutorial.md) — tutorials for every subject
 - [practice.md](practice.md) — practice sets by level, with a practice file in each subject
 - [PATHS.md](PATHS.md) — eight guided tracks, from backend to quantum
-- [GLOSSARY.md](GLOSSARY.md) — 76 terms, each pointing to where it's taught
+- [GLOSSARY.md](GLOSSARY.md) — 88 terms, each pointing to where it's taught
 - [FAQ.md](FAQ.md) — recommendations on tech, hardware, time and paths
 - [LIBRARY.md](LIBRARY.md) — a script that fetches the free books and papers to your own machine
 - [ROADMAP.md](ROADMAP.md) and [CHANGELOG.md](CHANGELOG.md) — what's planned and what changed

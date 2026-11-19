@@ -167,6 +167,34 @@ Start with the first tutorial in your chosen subject. Work through it with a ter
 - [Karpathy: Neural Networks, Zero to Hero](https://karpathy.ai/zero-to-hero.html) — Build from scratch
 - [Hugging Face LLM course](https://huggingface.co/learn/llm-course) — Transformers and fine-tuning
 
+### scikit-learn
+
+- [scikit-learn user guide](https://scikit-learn.org/stable/user_guide.html) — Start here
+- [scikit-learn MOOC (Inria)](https://inria.github.io/scikit-learn-mooc/) — A free course by the maintainers
+- [Examples gallery](https://scikit-learn.org/stable/auto_examples/index.html) — Runnable examples for every module
+- [Runnable examples in this repo](ai/frameworks/scikit-learn/examples/01_quickstart.py) — Four short scripts
+
+### PyTorch
+
+- [Official PyTorch tutorials](https://pytorch.org/tutorials/) — Start here: "Learn the Basics"
+- [Learn PyTorch for Deep Learning](https://www.learnpytorch.io/) — A free, code-first course
+- [Dive into Deep Learning](https://d2l.ai/) — A free book with PyTorch code
+- [Runnable examples in this repo](ai/frameworks/pytorch/examples/01_tensors_autograd.py) — Four short scripts, CPU-friendly
+
+### TensorFlow and Keras
+
+- [TensorFlow tutorials](https://www.tensorflow.org/tutorials) — Start here
+- [Keras guides](https://keras.io/guides/) — Clear and current
+- [Keras code examples](https://keras.io/examples/) — Vision, language and generative models
+- [Runnable examples in this repo](ai/frameworks/tensorflow/examples/02_keras_moons.py) — Four short scripts
+
+### ML Libraries in Other Languages
+
+- [ONNX Runtime](https://onnxruntime.ai/) — Run trained models from many languages
+- [TensorFlow.js](https://www.tensorflow.org/js) — Machine learning in the browser
+- [Are We Learning Yet?](https://www.arewelearningyet.com/) — A directory of Rust machine-learning crates
+- [Export and check a model in this repo](ai/frameworks/ml-libraries-other-languages/examples/01_sklearn_to_onnx.py) — Python to ONNX, then run from Node.js
+
 ### Agentic AI & Orchestration
 
 - [Building effective agents (Anthropic)](https://www.anthropic.com/engineering/building-effective-agents) — Start here

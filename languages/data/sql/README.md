@@ -85,6 +85,12 @@ Almost every application. PostgreSQL, MySQL, SQLite and SQL Server are common da
 - *SQL Performance Explained* — Markus Winand (💲)
 - [PostgreSQL Tutorial](https://www.postgresqltutorial.com/)
 
+## Libraries for data, ML and AI
+- **Local analytics:** DuckDB, which reads Parquet and works with pandas and Polars
+- **Vector search:** `pgvector` for PostgreSQL (embeddings and similarity search)
+- **In-database ML:** Apache MADlib for PostgreSQL, BigQuery ML
+- **From Python:** pandas and SQLAlchemy to move data into [scikit-learn](../../../ai/frameworks/scikit-learn/README.md)
+
 ## My personal take
 
 *These are my own opinions, not a fixed syllabus. Disagree and make your own call.*

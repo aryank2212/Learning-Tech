@@ -24,11 +24,7 @@ Check the driver first:
 nvidia-smi
 ```
 
-Pick the CUDA build from the official selector at https://pytorch.org/get-started/locally/. Example for CUDA 12.6 (check the page for the current version):
-
-```bash
-uv add torch torchvision --index-url https://download.pytorch.org/whl/cu126
-```
+The install recipes for every machine (CPU only, NVIDIA CUDA, Apple Silicon, AMD, Intel) are in the [PyTorch guide](../../frameworks/pytorch/README.md#install). On Linux with an NVIDIA GPU, `uv add torch torchvision` already installs a CUDA build. For a specific CUDA version, copy the command from the selector at https://pytorch.org/get-started/locally/.
 
 Verify the GPU works:
 

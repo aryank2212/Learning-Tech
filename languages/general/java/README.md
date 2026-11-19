@@ -97,6 +97,14 @@ javac Hello.java && java Hello
 ## Where Java is used
 Banks and large enterprises, Android app tooling, big-data platforms (Spark, Kafka, Hadoop), and Minecraft (Java Edition).
 
+## Libraries for data, ML and AI
+- **Deep learning:** Deep Java Library (DJL), Deeplearning4j
+- **Classical ML:** Tribuo, Smile, Weka
+- **Running exported models:** ONNX Runtime for Java
+- **Distributed ML:** Apache Spark MLlib
+
+More in [ML libraries in other languages](../../../ai/frameworks/ml-libraries-other-languages/README.md#java-and-kotlin).
+
 ## My personal take
 
 *These are my own opinions, not a fixed syllabus. Disagree and make your own call.*

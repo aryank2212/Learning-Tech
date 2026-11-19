@@ -89,6 +89,17 @@ Docker, Kubernetes, Terraform, Prometheus, Hugo and much of the cloud tooling.
 - [The Go Blog](https://go.dev/blog/)
 - [Go code review comments](https://go.dev/wiki/CodeReviewComments)
 
+## Libraries for data, ML and AI
+- **Numerics:** Gonum
+- **Deep learning:** Gorgonia, GoMLX
+- **Running exported models:** `onnxruntime_go`
+- **Classical ML:** golearn (last released in 2022; check it fits your needs)
+
+```bash
+go get gonum.org/v1/gonum/mat
+```
+More in [ML libraries in other languages](../../../ai/frameworks/ml-libraries-other-languages/README.md#go).
+
 ## My personal take
 
 *These are my own opinions, not a fixed syllabus. Disagree and make your own call.*

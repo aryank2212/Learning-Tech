@@ -88,6 +88,8 @@ def main():
             fails += 1
             print(f"  skip {url}: {e}", file=sys.stderr)
             continue
+        if urllib.parse.urlsplit(final).netloc != host:  # a redirect left the site: don't save it
+            continue
         is_html = "html" in ctype
         target = local_path(out_dir, final, is_html)
         os.makedirs(os.path.dirname(target), exist_ok=True)

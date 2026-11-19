@@ -1,6 +1,6 @@
 # Practice: AI, LLMs & Machine / Deep Learning
 
-Work through the levels in order. Don't open a solution until you've tried each task for at least 30 minutes.
+Work through the levels in order. Spend at least 30 minutes on a task before looking anything up. At the end, a short quiz checks the key ideas, and each answer is hidden until you click it.
 
 How to check yourself: write tests for each task, or compare your output with a known answer. For maths and theory, check by hand and then with code.
 
@@ -20,6 +20,42 @@ How to check yourself: write tests for each task, or compare your output with a 
 
 - [ ] Train a small GPT on a text you choose.
 - [ ] LoRA fine-tune a 1B-parameter model and evaluate it honestly.
+
+## Quick quiz
+
+Answer each question out loud or on paper first, then open the answer.
+
+1. What is overfitting?
+
+   <details><summary>Show answer</summary>
+
+   The model learns noise and quirks of the training data, so it does worse on new data.
+
+   </details>
+
+2. What does gradient descent do?
+
+   <details><summary>Show answer</summary>
+
+   It repeatedly moves the parameters a small step in the direction that reduces the loss (the negative gradient).
+
+   </details>
+
+3. What does attention do in a transformer?
+
+   <details><summary>Show answer</summary>
+
+   It lets each token weigh and combine information from other tokens, using queries, keys and values.
+
+   </details>
+
+4. Why use LoRA for fine-tuning?
+
+   <details><summary>Show answer</summary>
+
+   It trains small low-rank adapter matrices instead of all the weights, which makes fine-tuning much cheaper.
+
+   </details>
 
 ## Stuck?
 

@@ -1,0 +1,32 @@
+name: Suggest a tutorial or resource
+description: Suggest a free tutorial, book, course or tool.
+title: "[Resource] "
+labels: ["documentation"]
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: Official page or the author's own site, please. No pirated copies.
+    validations:
+      required: true
+  - type: input
+    id: subject
+    attributes:
+      label: Which subject does it belong to?
+    validations:
+      required: true
+  - type: dropdown
+    id: cost
+    attributes:
+      label: Cost
+      options:
+        - Free
+        - Paid
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is it good?
+      description: Who is it for, and what does it do better than what we have?

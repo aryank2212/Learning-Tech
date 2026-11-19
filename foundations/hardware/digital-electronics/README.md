@@ -3,7 +3,7 @@
 How logic is built from transistors and gates, and how gates become memory, adders and CPUs. It is the bridge between physics and computer architecture, and the most hands-on subject in this repo.
 
 ## Prerequisites
-- Boolean algebra (see [maths/discrete-maths.md](../../mathematics/maths/discrete-maths.md), Phase 8)
+- Boolean algebra (see [discrete maths](../../mathematics/maths/discrete-maths.md), Phase 8)
 - Basic electricity: voltage, current, resistance (helpful, not required)
 
 ## Install — simulate first

@@ -1,0 +1,80 @@
+# Glossary
+
+Short definitions of terms used across Learning-Tech, with a pointer to where each one is taught. Missing a word? [Open an issue](https://github.com/aryank2212/Learning-Tech/issues/new/choose) and we'll add it.
+
+- **ACID** — Properties of reliable database transactions: atomicity, consistency, isolation and durability. *See: [SQL](languages/data/sql/README.md).*
+- **Agent (AI)** — A language model in a loop that can call tools and decide what to do next. *See: [Agentic AI](ai/agents/agentic-ai/README.md).*
+- **Amdahl's law** — The serial part of a program limits how much parallel hardware can speed it up. *See: [Parallel computing](systems/distributed/parallel-distributed-computing/README.md).*
+- **API** — A defined way for programs to talk to each other. *See: [Web technology](web/fundamentals/web-technology/README.md).*
+- **Attention** — A mechanism that lets each token weigh and combine information from other tokens. *See: [AI/ML](ai/machine-learning/ai-ml/README.md).*
+- **Big-O notation** — Describes how running time or memory grows with the size of the input. *See: [DSA](foundations/algorithms/dsa/README.md).*
+- **Blockchain** — An append-only ledger copied across many computers that agree on its contents by consensus. *See: [Blockchain](security/ledgers/blockchain/README.md).*
+- **Cache** — Small, fast memory that holds recently used data to save trips to slower memory. *See: [Computer architecture](foundations/hardware/computer-architecture/README.md).*
+- **CAP theorem** — During a network partition, a system must choose between consistency and availability. *See: [System architecture](systems/architecture/system-architecture/README.md).*
+- **CI/CD** — Continuous integration and delivery: build, test and release automatically on every change. *See: [Software engineering](software/engineering/software-engineering/README.md).*
+- **Compiler** — A program that translates source code into another form, usually machine code. *See: [Compiler design](software/compilers/compiler-design/README.md).*
+- **Concurrency** — Managing several tasks whose execution overlaps in time. *See: [Parallel computing](systems/distributed/parallel-distributed-computing/README.md).*
+- **Consensus** — Agreement among distributed computers on a single value or order of events. *See: [Blockchain](security/ledgers/blockchain/README.md).*
+- **Container** — An isolated process environment that shares the host's kernel, built from namespaces and cgroups. *See: [Operating systems](systems/kernels/operating-systems/README.md).*
+- **Context window** — How much text a language model can consider at once. *See: [AI/ML](ai/machine-learning/ai-ml/README.md).*
+- **CORS** — A browser rule that controls which other origins may read a server's responses. *See: [Web technology](web/fundamentals/web-technology/README.md).*
+- **Cross-validation** — Evaluating a model on several different train/test splits. *See: [Data science](data/science/data-science/README.md).*
+- **Cryptographic hash** — A function that maps data to a short fingerprint and is hard to reverse or to make collide. *See: [Cryptography](security/cryptography/cryptography/README.md).*
+- **CSRF** — An attack where another site makes your browser send a request you didn't intend. *See: [Web technology](web/fundamentals/web-technology/README.md).*
+- **Data leakage** — Information from outside the training data slipping into training, which inflates results. *See: [Data science](data/science/data-science/README.md).*
+- **Deadlock** — Tasks that wait on each other forever. *See: [Operating systems](systems/kernels/operating-systems/README.md).*
+- **DFA** — Deterministic finite automaton: a simple machine that reads a string and accepts or rejects it. *See: [Theory of computation](foundations/theory/theory-of-computation/README.md).*
+- **DNS** — The internet's naming system, which maps names to addresses. *See: [Networking](systems/networks/computer-networking/README.md).*
+- **Dynamic programming** — Solving a problem by combining solutions to overlapping subproblems. *See: [DSA](foundations/algorithms/dsa/README.md).*
+- **Embedding** — A vector that represents text, an image or another item. *See: [AI/ML](ai/machine-learning/ai-ml/README.md).*
+- **Entanglement** — A quantum correlation between qubits that can't be described one at a time. *See: [Quantum computing](emerging/quantum/quantum-computing/README.md).*
+- **Epoch** — One full pass through the training data. *See: [AI/ML](ai/machine-learning/ai-ml/README.md).*
+- **Fine-tuning** — Further training a pretrained model on your own data. *See: [AI/ML](ai/machine-learning/ai-ml/README.md).*
+- **Flip-flop** — A circuit element that stores one bit and changes on a clock edge. *See: [Digital electronics](foundations/hardware/digital-electronics/README.md).*
+- **Forward secrecy** — Past sessions stay secret even if long-term keys are leaked later. *See: [Cryptography](security/cryptography/cryptography/README.md).*
+- **Gradient descent** — Optimisation by repeatedly stepping against the gradient of the loss. *See: [AI/ML](ai/machine-learning/ai-ml/README.md).*
+- **Hash table** — A data structure that maps keys to values using a hash function. *See: [DSA](foundations/algorithms/dsa/README.md).*
+- **HTTP** — The protocol that web browsers and servers use to talk. *See: [Web technology](web/fundamentals/web-technology/README.md).*
+- **Idempotent** — Doing it twice has the same effect as doing it once, which makes retries safe. *See: [System architecture](systems/architecture/system-architecture/README.md).*
+- **Index (database)** — A structure that speeds up lookups at the cost of storage and slower writes. *See: [SQL](languages/data/sql/README.md).*
+- **Interpreter** — A program that runs source code directly, without producing a separate executable. *See: [Compiler design](software/compilers/compiler-design/README.md).*
+- **JIT compilation** — Compiling code to machine code while the program is running. *See: [Compiler design](software/compilers/compiler-design/README.md).*
+- **Kernel** — The core of an operating system, which manages hardware, memory and processes. *See: [Operating systems](systems/kernels/operating-systems/README.md).*
+- **Latency** — The time one operation takes. *See: [System architecture](systems/architecture/system-architecture/README.md).*
+- **LLM** — Large language model: a neural network trained to predict text. *See: [AI/ML](ai/machine-learning/ai-ml/README.md).*
+- **LoRA** — A fine-tuning method that trains small low-rank adapter matrices instead of all the weights. *See: [AI/ML](ai/machine-learning/ai-ml/README.md).*
+- **MCP** — Model Context Protocol: a standard for connecting models to tools and data. *See: [Agentic AI](ai/agents/agentic-ai/README.md).*
+- **Merkle tree** — A tree of hashes that allows short proofs that data is included. *See: [Blockchain](security/ledgers/blockchain/README.md).*
+- **Mutex** — A lock that lets one thread at a time use a resource. *See: [Operating systems](systems/kernels/operating-systems/README.md).*
+- **NAT** — Network address translation: many private hosts share one public address. *See: [Networking](systems/networks/computer-networking/README.md).*
+- **Normalisation** — Organising a database to reduce duplicated data. *See: [SQL](languages/data/sql/README.md).*
+- **NP-complete** — The hardest problems in NP: a fast algorithm for one would give a fast algorithm for all. *See: [Theory of computation](foundations/theory/theory-of-computation/README.md).*
+- **OAuth** — A standard for letting an app act on your behalf without sharing your password. *See: [Web technology](web/fundamentals/web-technology/README.md).*
+- **Overfitting** — A model fits its training data too closely and does badly on new data. *See: [AI/ML](ai/machine-learning/ai-ml/README.md).*
+- **Page table** — The structure that maps virtual memory pages to physical memory. *See: [Operating systems](systems/kernels/operating-systems/README.md).*
+- **Parquet** — A columnar file format that makes analytics queries efficient. *See: [Big data](data/analytics/predictive-big-data-analytics/README.md).*
+- **Pipeline (CPU)** — Overlapping the stages of several instructions to raise throughput. *See: [Computer architecture](foundations/hardware/computer-architecture/README.md).*
+- **Post-quantum cryptography** — Algorithms designed to stay secure against quantum computers. *See: [Cryptography](security/cryptography/cryptography/README.md).*
+- **Prompt injection** — Untrusted text that tries to take over a model's instructions. *See: [Agentic AI](ai/agents/agentic-ai/README.md).*
+- **Qubit** — A quantum bit, which can be in a superposition of 0 and 1. *See: [Quantum computing](emerging/quantum/quantum-computing/README.md).*
+- **Race condition** — A bug where the result depends on the timing of unsynchronised accesses. *See: [Parallel computing](systems/distributed/parallel-distributed-computing/README.md).*
+- **Raft** — A consensus algorithm designed to be easy to understand. *See: [System architecture](systems/architecture/system-architecture/README.md).*
+- **RAG** — Retrieval-augmented generation: fetch relevant documents and give them to the model with the question. *See: [Agentic AI](ai/agents/agentic-ai/README.md).*
+- **RAII** — Tying a resource's lifetime to an object's lifetime, so cleanup happens automatically. *See: [C++](languages/systems/cpp/README.md).*
+- **Reduction** — Turning one problem into another, to compare their difficulty. *See: [Theory of computation](foundations/theory/theory-of-computation/README.md).*
+- **Replication** — Keeping copies of data on several machines. *See: [System architecture](systems/architecture/system-architecture/README.md).*
+- **REST** — An architectural style for web APIs built on resources and HTTP methods. *See: [Web technology](web/fundamentals/web-technology/README.md).*
+- **RISC-V** — An open instruction set architecture. *See: [Computer architecture](foundations/hardware/computer-architecture/README.md).*
+- **SIMD** — Single instruction, multiple data: one operation applied to many values at once. *See: [Computer architecture](foundations/hardware/computer-architecture/README.md).*
+- **SQL injection** — An attack that inserts SQL commands through untrusted input. *See: [Web technology](web/fundamentals/web-technology/README.md).*
+- **SSA** — Static single assignment: a compiler form where each variable is assigned exactly once. *See: [Compiler design](software/compilers/compiler-design/README.md).*
+- **TCP** — The reliable, ordered byte-stream transport protocol. *See: [Networking](systems/networks/computer-networking/README.md).*
+- **Thread** — A unit of execution inside a process. *See: [Operating systems](systems/kernels/operating-systems/README.md).*
+- **TLB** — A small cache of recent virtual-to-physical address translations. *See: [Computer architecture](foundations/hardware/computer-architecture/README.md).*
+- **TLS** — The protocol that secures connections, such as HTTPS. *See: [Cryptography](security/cryptography/cryptography/README.md).*
+- **Token (LLM)** — The unit of text a language model reads and writes, often part of a word. *See: [AI/ML](ai/machine-learning/ai-ml/README.md).*
+- **Transformer** — A neural-network architecture built on attention. *See: [AI/ML](ai/machine-learning/ai-ml/README.md).*
+- **Virtual memory** — Giving each process its own address space, mapped onto physical memory. *See: [Operating systems](systems/kernels/operating-systems/README.md).*
+- **WebAssembly** — A portable binary format that runs in browsers (and elsewhere) at near-native speed. *See: [Web technology](web/fundamentals/web-technology/README.md).*
+- **XSS** — Cross-site scripting: an attacker's script runs in other users' pages. *See: [Web technology](web/fundamentals/web-technology/README.md).*
+- **Zero-knowledge proof** — Proving a statement is true without revealing why it's true. *See: [Cryptography](security/cryptography/cryptography/README.md).*

@@ -11,7 +11,7 @@ The mathematics and engineering behind secrecy, integrity and authentication. It
 - **Use test keys and throwaway data** in every lab.
 
 ## Prerequisites
-- Discrete maths: modular arithmetic and number theory (see [maths/discrete-maths.md](../../../foundations/mathematics/maths/discrete-maths.md), Phase 6)
+- Discrete maths: modular arithmetic and number theory (see [discrete maths](../../../foundations/mathematics/maths/discrete-maths.md), Phase 6)
 - A programming language: Python, C or Rust
 
 ## Install

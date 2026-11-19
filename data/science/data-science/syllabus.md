@@ -6,7 +6,7 @@ Tick items in [progress/TRACKER.md](../../../progress/TRACKER.md).
 - [ ] Asking questions that data can answer
 - [ ] Data types: numeric, categorical, time, text
 - [ ] Data sources and their limits
-- [ ] Data ethics: consent, bias, representation (see [tech-ethics](../../../security/ethics/tech-ethics/README.md))
+- [ ] Data ethics: consent, bias, representation (see [tech ethics](../../../security/ethics/tech-ethics/README.md))
 
 🛠️ Project: write a one-page project brief for a dataset you choose.
 

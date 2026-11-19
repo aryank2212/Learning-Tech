@@ -24,7 +24,7 @@ Maths (linear algebra, calculus, probability)
 
 ## Prerequisites
 
-- **Python** (see [languages/python](../../../languages/general/python/README.md)), at least Level 2
+- **Python** (see [Python](../../../languages/general/python/README.md)), at least Level 2
 - **Maths** you can revise as you go: linear algebra (vectors, matrices), calculus (derivatives, chain rule), basic probability
 
 ## Hardware reality check

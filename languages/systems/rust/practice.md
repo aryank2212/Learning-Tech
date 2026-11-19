@@ -1,6 +1,6 @@
 # Practice: Rust
 
-Work through the levels in order. Don't open a solution until you've tried each task for at least 30 minutes.
+Work through the levels in order. Spend at least 30 minutes on a task before looking anything up. At the end, a short quiz checks the key ideas, and each answer is hidden until you click it.
 
 How to check yourself: write tests for each task, or compare your output with a known answer. For maths and theory, check by hand and then with code.
 
@@ -20,6 +20,42 @@ How to check yourself: write tests for each task, or compare your output with a 
 
 - [ ] Write a thread pool that runs closures on N threads, using channels.
 - [ ] Write an async TCP echo server with `tokio` that serves 100 clients at once.
+
+## Quick quiz
+
+Answer each question out loud or on paper first, then open the answer.
+
+1. What happens if you write `let x = 5;` and later `x = 6;`?
+
+   <details><summary>Show answer</summary>
+
+   A compile error. Bindings are immutable by default. Declare it with `let mut x = 5;` if it must change.
+
+   </details>
+
+2. What's the difference between `String` and `&str`?
+
+   <details><summary>Show answer</summary>
+
+   `String` is an owned, growable string on the heap. `&str` is a borrowed view of string data that someone else owns.
+
+   </details>
+
+3. Why does `let a = String::from("hi"); let b = a; println!("{}", a);` fail?
+
+   <details><summary>Show answer</summary>
+
+   Ownership moved from `a` to `b`, so `a` is no longer valid. Clone it (`a.clone()`) or borrow it (`&a`).
+
+   </details>
+
+4. When do you need explicit lifetime annotations on a function?
+
+   <details><summary>Show answer</summary>
+
+   When the compiler can't tell which input a returned reference borrows from, as in `fn longest<'a>(x: &'a str, y: &'a str) -> &'a str`.
+
+   </details>
 
 ## Stuck?
 

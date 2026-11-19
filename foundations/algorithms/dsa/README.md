@@ -16,7 +16,7 @@ uv init dsa-practice && cd dsa-practice
 # C++ with sanitizers, for debugging solutions
 g++ -std=c++17 -O2 -Wall -fsanitize=address,undefined sol.cpp -o sol
 ```
-Java: see [languages/java](../../../languages/general/java/README.md).
+Java: see [Java](../../../languages/general/java/README.md).
 
 Keep a `stress/` folder with a brute-force checker next to each solution. Compare the two on random inputs. This catches most bugs before you submit.
 

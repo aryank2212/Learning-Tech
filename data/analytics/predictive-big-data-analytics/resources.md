@@ -4,13 +4,13 @@
 | | Book | Notes |
 |---|---|---|
 | ⭐🆓 | *Forecasting: Principles and Practice* — Hyndman & Athanasopoulos | [Free online](https://otexts.com/fpp3/) |
-| ⭐🆓 | *The Elements of Statistical Learning* — Hastie, Tibshirani, Friedman | [Free PDF](https://hastie.su.domains/ElemStatLearn/) |
+| ⭐🆓 | *The Elements of Statistical Learning* — Hastie, Tibshirani, Friedman | Free from the authors: [book page](https://hastie.su.domains/ElemStatLearn/) (its PDF links are currently dead; search the title for a current copy) |
 | 🆓 | *An Introduction to Statistical Learning* — James, Witten, Hastie, Tibshirani | [Free](https://www.statlearning.com/) |
 | 💲 | *Fundamentals of Data Engineering* — Joe Reis & Matt Housley | Pipelines and warehouses |
 | 💲 | *Big Data: Principles and Best Practices of Scalable Realtime Data Systems* — Marz & Warren | Lambda architecture |
 | 💲 | *Learning Spark* (2nd ed) — Damji et al. | Spark in depth |
 | 💲 | *Kafka: The Definitive Guide* — Narkhede, Shapira, Palino | Kafka in depth |
-| 💲 | *Designing Data-Intensive Applications* — Martin Kleppmann | See [system-architecture](../../../systems/architecture/system-architecture/resources.md) |
+| 💲 | *Designing Data-Intensive Applications* — Martin Kleppmann | See [system architecture](../../../systems/architecture/system-architecture/resources.md) |
 
 ## Documentation
 - ⭐🆓 [Apache Spark](https://spark.apache.org/docs/latest/) and [PySpark API](https://spark.apache.org/docs/latest/api/python/)

@@ -7,8 +7,8 @@ Two halves:
 - **Big data:** distributed storage and processing, streams, pipelines, warehouses and lakehouses.
 
 ## Prerequisites
-- Python, SQL, and the [data-science](../../science/data-science/README.md) syllabus up to Phase 7 (or equivalent)
-- Some Java helps: Spark and Kafka run on the JVM (see [languages/java](../../../languages/general/java/README.md))
+- Python, SQL, and the [data science](../../science/data-science/README.md) syllabus up to Phase 7 (or equivalent)
+- Some Java helps: Spark and Kafka run on the JVM (see [Java](../../../languages/general/java/README.md))
 
 ## Install
 ```bash

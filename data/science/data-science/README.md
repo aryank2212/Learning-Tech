@@ -9,9 +9,9 @@ Question → Collect → Clean → Explore (EDA) → Model → Evaluate → Comm
 This is the same cycle the CRISP-DM framework describes. Most of the time goes into collecting and cleaning, not modelling.
 
 ## Prerequisites
-- Python at Level 2 or better (see [languages/python](../../../languages/general/python/README.md))
-- SQL basics (see [languages/sql](../../../languages/data/sql/README.md))
-- Statistics basics (see [statistical-computing](../../statistics/statistical-computing/README.md))
+- Python at Level 2 or better (see [Python](../../../languages/general/python/README.md))
+- SQL basics (see [SQL](../../../languages/data/sql/README.md))
+- Statistics basics (see [statistical computing](../../statistics/statistical-computing/README.md))
 
 ## Install
 ```bash

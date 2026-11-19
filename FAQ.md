@@ -112,3 +112,32 @@ Open an issue. You can ask for anything: a subject, a tutorial, a practice set, 
 
 **Are the personal takes my own?**
 They're the author's opinions, written to be argued with. Treat them as one view, and form your own.
+
+## More questions
+
+**How do I know which level to start at?**
+Try Level 1 of a subject's `practice.md`. If you finish it comfortably in under an hour, move to Level 2. If Level 1 feels hard, go back to the syllabus and the first tutorial in [tutorial.md](tutorial.md).
+
+**Where are the answers to the practice tasks?**
+The quiz at the end of each practice file has answers. The tasks don't, on purpose: you check them with tests, a known result, or by comparing with a friend. Worked solutions are on the [roadmap](ROADMAP.md). If you're stuck, [open an issue](https://github.com/aryank2212/Learning-Tech/issues/new/choose) and say what you tried.
+
+**Is there a recommended order?**
+Yes, see [PATHS.md](PATHS.md). It has eight tracks (backend, systems, AI, security, hardware, compilers, data, quantum), each with checkpoints.
+
+**What does this word mean?**
+Check the [glossary](GLOSSARY.md). If a term is missing, ask for it.
+
+**How do you keep the links working?**
+A GitHub Actions workflow checks the Markdown links every week, and `scripts/check_repo.py` checks the structure and internal links on every pull request. If you find a dead link before we do, please report it.
+
+**Can I get a certificate for finishing something?**
+No. This is a self-study resource, and your progress is tracked by you. A finished project in a public repository says more than a certificate.
+
+**Can I use this in a class or a study group?**
+Yes. The licence allows teaching and adapting, as long as you credit the project and share changes under the same licence. The paths and practice sets work well for a weekly study night.
+
+**Can I translate it?**
+Yes, and it's on the roadmap. Open an issue so we don't duplicate work.
+
+**What if someone behaves badly in an issue?**
+Read the [Code of Conduct](CODE_OF_CONDUCT.md). You can report a problem by opening an issue marked as a conduct concern or by contacting the maintainer on GitHub.

@@ -1,6 +1,6 @@
 # Practice: Statistical Computing
 
-Work through the levels in order. Don't open a solution until you've tried each task for at least 30 minutes.
+Work through the levels in order. Spend at least 30 minutes on a task before looking anything up. At the end, a short quiz checks the key ideas, and each answer is hidden until you click it.
 
 How to check yourself: write tests for each task, or compare your output with a known answer. For maths and theory, check by hand and then with code.
 
@@ -20,6 +20,42 @@ How to check yourself: write tests for each task, or compare your output with a 
 
 - [ ] Find the maximum-likelihood estimates for a gamma distribution using optimisation.
 - [ ] Fit a Beta–Binomial model in PyMC and check convergence.
+
+## Quick quiz
+
+Answer each question out loud or on paper first, then open the answer.
+
+1. What does a 95% confidence interval mean?
+
+   <details><summary>Show answer</summary>
+
+   If you repeated the procedure many times, about 95% of the intervals would contain the true parameter.
+
+   </details>
+
+2. What is a p-value?
+
+   <details><summary>Show answer</summary>
+
+   The probability of data at least this extreme if the null hypothesis were true. It is not the probability that the null hypothesis is true.
+
+   </details>
+
+3. Why use the bootstrap?
+
+   <details><summary>Show answer</summary>
+
+   It estimates uncertainty by resampling the data with replacement, without strong assumptions about the distribution.
+
+   </details>
+
+4. What is the multiple-testing problem?
+
+   <details><summary>Show answer</summary>
+
+   Run many tests and some will look significant by chance. Control it with Bonferroni or the false discovery rate (Benjamini–Hochberg).
+
+   </details>
 
 ## Stuck?
 

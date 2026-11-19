@@ -1,6 +1,6 @@
 # Practice: Parallel & Distributed Computing
 
-Work through the levels in order. Don't open a solution until you've tried each task for at least 30 minutes.
+Work through the levels in order. Spend at least 30 minutes on a task before looking anything up. At the end, a short quiz checks the key ideas, and each answer is hidden until you click it.
 
 How to check yourself: write tests for each task, or compare your output with a known answer. For maths and theory, check by hand and then with code.
 
@@ -20,6 +20,42 @@ How to check yourself: write tests for each task, or compare your output with a 
 
 - [ ] Simulate leader election with random failures, Raft-style.
 - [ ] Run word count with Dask on 1 GB of text and report the scaling.
+
+## Quick quiz
+
+Answer each question out loud or on paper first, then open the answer.
+
+1. State Amdahl's law.
+
+   <details><summary>Show answer</summary>
+
+   Speedup ≤ 1 / ((1 − p) + p / N), where p is the parallel fraction and N is the number of processors.
+
+   </details>
+
+2. What is a race condition?
+
+   <details><summary>Show answer</summary>
+
+   A bug where the result depends on the timing of unsynchronised accesses to shared data.
+
+   </details>
+
+3. What does `MPI_Allreduce` do?
+
+   <details><summary>Show answer</summary>
+
+   It combines values from all ranks (for example, a sum) and gives the result to every rank.
+
+   </details>
+
+4. What is a Lamport clock?
+
+   <details><summary>Show answer</summary>
+
+   A logical counter that orders events by causality. Increment on each event, and on receiving a message set it to max(local, received) + 1.
+
+   </details>
 
 ## Stuck?
 

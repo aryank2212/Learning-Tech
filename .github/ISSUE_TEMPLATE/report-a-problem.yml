@@ -1,0 +1,24 @@
+name: Report a problem
+description: A broken link, a wrong fact, a command that doesn't work, or confusing text.
+title: "[Problem] "
+labels: ["bug"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Where is it?
+      description: The file or page, for example `systems/kernels/operating-systems/syllabus.md`.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong?
+      description: What did you expect, and what happened? Include the command and the error message if there is one.
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Your system
+      description: For example, Ubuntu 24.04, Arch, macOS 15, Windows with WSL2.

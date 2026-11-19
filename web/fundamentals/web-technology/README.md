@@ -3,8 +3,8 @@
 How the web works underneath the frameworks: protocols, browsers, standards, security and performance. [Web development](../../building/web-development/README.md) teaches you to build apps. Web technology explains why they behave the way they do.
 
 ## Prerequisites
-- HTML, CSS and JavaScript basics (see [web-development](../../building/web-development/syllabus.md), Phases 1–3)
-- Networking basics (see [computer-networking](../../../systems/networks/computer-networking/syllabus.md), Phases 1–6)
+- HTML, CSS and JavaScript basics (see [web development](../../building/web-development/syllabus.md), Phases 1–3)
+- Networking basics (see [computer networking](../../../systems/networks/computer-networking/syllabus.md), Phases 1–6)
 
 ## Install
 ```bash

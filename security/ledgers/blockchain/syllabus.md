@@ -26,7 +26,7 @@ Tick items in [progress/TRACKER.md](../../../progress/TRACKER.md). Use testnets 
 ### Phase 4 – Proof of work vs proof of stake
 - [ ] Mining difficulty and target hashes
 - [ ] Validators, stake, and slashing
-- [ ] Energy trade-offs (see [tech-ethics](../../ethics/tech-ethics/README.md))
+- [ ] Energy trade-offs (see [tech ethics](../../ethics/tech-ethics/README.md))
 
 🛠️ Project: a proof-of-work miner with adjustable difficulty. Measure how difficulty changes the average block time.
 

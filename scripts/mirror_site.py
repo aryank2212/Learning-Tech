@@ -8,7 +8,7 @@ Usage: mirror_site.py START_URL OUT_DIR MAX_DEPTH MAX_MB
 - Saves files under OUT_DIR/<host>/<path>. Links are not rewritten,
   so some links only work while online.
 """
-import os, random, re, sys, time, urllib.robotparser, urllib.parse, urllib.request, hashlib
+import os, random, re, sys, time, urllib.error, urllib.robotparser, urllib.parse, urllib.request, hashlib
 from collections import deque
 from html.parser import HTMLParser
 
@@ -42,14 +42,29 @@ def local_path(out_root, url, is_html):
         name = f"{root}__{hashlib.md5(parts.query.encode()).hexdigest()[:8]}{ext}"
     return name
 
+def load_robots(start):
+    """Fetch robots.txt with our own user agent (Python's default one is blocked by some sites).
+    Returns a parser, None when there is no robots.txt (4xx: allowed), or False when it can't be read (5xx/network)."""
+    url = urllib.parse.urljoin(start, "/robots.txt")
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            lines = r.read().decode("utf-8", errors="replace").splitlines()
+    except urllib.error.HTTPError as e:
+        return None if 400 <= e.code < 500 else False
+    except Exception:
+        return False
+    rp = urllib.robotparser.RobotFileParser()
+    rp.parse(lines)
+    return rp
+
 def main():
     start, out_dir, max_depth, max_mb = sys.argv[1], sys.argv[2], int(sys.argv[3]), float(sys.argv[4])
     host = urllib.parse.urlsplit(start).netloc
-    rp = urllib.robotparser.RobotFileParser()
-    try:
-        rp.set_url(urllib.parse.urljoin(start, "/robots.txt")); rp.read()
-    except Exception:
-        rp = None  # no robots.txt readable: proceed politely
+    rp = load_robots(start)
+    if rp is False:
+        print(f"  robots.txt for {host} could not be read safely; skipping this site", file=sys.stderr)
+        return 1
     seen, queue = set(), deque([(start, 0)])
     total, pages, fails = 0, 0, 0
     while queue and pages < MAX_PAGES and total < max_mb * 1024 * 1024:

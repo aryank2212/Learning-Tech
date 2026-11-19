@@ -1,6 +1,6 @@
 # Practice: Research
 
-Work through the levels in order. Don't open a solution until you've tried each task for at least 30 minutes.
+Work through the levels in order. Spend at least 30 minutes on a task before looking anything up. At the end, a short quiz checks the key ideas, and each answer is hidden until you click it.
 
 How to check yourself: write tests for each task, or compare your output with a known answer. For maths and theory, check by hand and then with code.
 
@@ -20,6 +20,42 @@ How to check yourself: write tests for each task, or compare your output with a 
 
 - [ ] Replicate a small experiment and report the differences with error bars.
 - [ ] Test one open question from the research directions page.
+
+## Quick quiz
+
+Answer each question out loud or on paper first, then open the answer.
+
+1. What are the three passes when reading a paper?
+
+   <details><summary>Show answer</summary>
+
+   Skim the title, abstract, figures and conclusion. Read the body without fine details. Then re-derive and critique the key ideas.
+
+   </details>
+
+2. What does reproducibility mean?
+
+   <details><summary>Show answer</summary>
+
+   Other people can get the same results from your code, data and environment.
+
+   </details>
+
+3. Why report results over several random seeds?
+
+   <details><summary>Show answer</summary>
+
+   To show how much results vary, so you don't draw conclusions from a lucky run.
+
+   </details>
+
+4. What is an ablation study?
+
+   <details><summary>Show answer</summary>
+
+   Removing or changing parts of a system to measure what each part contributes.
+
+   </details>
 
 ## Stuck?
 

@@ -12,7 +12,9 @@ Learning-Tech is an **open-source-leaning** platform. Everything here is free to
 | Pick a first language | [languages](languages/README.md) |
 | Find a tutorial for a topic | [tutorial.md](tutorial.md) |
 | Practise at my level | [practice.md](practice.md) |
+| Follow a guided learning path | [PATHS.md](PATHS.md) |
 | Get answers to common questions | [FAQ.md](FAQ.md) |
+| Look up a term | [GLOSSARY.md](GLOSSARY.md) |
 | Track my progress | [progress](progress/TRACKER.md) |
 
 ## Foundations
@@ -221,12 +223,16 @@ Doing research in AI and every other subject.
 
 - [tutorial.md](tutorial.md) — tutorials for every subject
 - [practice.md](practice.md) — practice sets by level, with a practice file in each subject
+- [PATHS.md](PATHS.md) — eight guided tracks, from backend to quantum
+- [GLOSSARY.md](GLOSSARY.md) — 76 terms, each pointing to where it's taught
 - [FAQ.md](FAQ.md) — recommendations on tech, hardware, time and paths
+- [LIBRARY.md](LIBRARY.md) — a script that fetches the free books and papers to your own machine
+- [ROADMAP.md](ROADMAP.md) and [CHANGELOG.md](CHANGELOG.md) — what's planned and what changed
 - [setup](setup/README.md) — install guide for Arch/Omarchy, with notes for other systems
 - [progress](progress/TRACKER.md) — tick off what you've learned
 
 ## Licence and contributions
-Content: [CC BY-SA 4.0](LICENSE). Contributions welcome: [CONTRIBUTING.md](CONTRIBUTING.md).
+Content: [CC BY-SA 4.0](LICENSE). Contributions welcome: [CONTRIBUTING.md](CONTRIBUTING.md). Please also read the [Code of Conduct](CODE_OF_CONDUCT.md). Ask for anything with the [issue forms](https://github.com/aryank2212/Learning-Tech/issues/new/choose).
 
 ## Legend
 🆓 free · 💲 paid book or course · ⭐ start here · 🛠️ hands-on project · *(suggested)* a subject added beyond the original list

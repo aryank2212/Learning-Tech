@@ -4,7 +4,7 @@ The mathematics that computer science and engineering rely on, in two parts:
 - **Engineering maths:** linear algebra, calculus, probability, numerical methods, optimisation. Feeds AI, graphics, physics, signal processing and data science.
 - **Discrete maths:** logic, proofs, sets, counting, recurrences, number theory, graphs, automata. Feeds algorithms, cryptography, databases, compilers and digital logic.
 
-Statistics has its own section: [statistical-computing](../../../data/statistics/statistical-computing/README.md).
+Statistics has its own section: [statistical computing](../../../data/statistics/statistical-computing/README.md).
 
 ## Study order
 1. **Proofs and logic** (discrete) — the language everything else is written in.

@@ -1,0 +1,20 @@
+name: Ask a question
+description: Stuck on a topic or a practice task? Ask here.
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+      description: A good question says what you tried and what happened.
+  - type: input
+    id: subject
+    attributes:
+      label: Which subject?

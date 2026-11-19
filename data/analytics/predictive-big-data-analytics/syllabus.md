@@ -37,7 +37,7 @@ Tick items in [progress/TRACKER.md](../../../progress/TRACKER.md).
 ### Phase 5 – Big data concepts
 - [ ] The four Vs: volume, velocity, variety, veracity
 - [ ] Batch vs stream processing
-- [ ] Partitioning and replication (see [system-architecture](../../../systems/architecture/system-architecture/README.md))
+- [ ] Partitioning and replication (see [system architecture](../../../systems/architecture/system-architecture/README.md))
 - [ ] Columnar storage: Parquet
 
 🛠️ Project: convert a 1 GB CSV to Parquet and compare query times in DuckDB and pandas.

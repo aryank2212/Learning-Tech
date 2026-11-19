@@ -1,6 +1,6 @@
 # Practice: System Architecture
 
-Work through the levels in order. Don't open a solution until you've tried each task for at least 30 minutes.
+Work through the levels in order. Spend at least 30 minutes on a task before looking anything up. At the end, a short quiz checks the key ideas, and each answer is hidden until you click it.
 
 How to check yourself: write tests for each task, or compare your output with a known answer. For maths and theory, check by hand and then with code.
 
@@ -20,6 +20,42 @@ How to check yourself: write tests for each task, or compare your output with a 
 
 - [ ] Design a chat system for ten million users, including how messages fan out.
 - [ ] Write an ADR for splitting a monolith into two services.
+
+## Quick quiz
+
+Answer each question out loud or on paper first, then open the answer.
+
+1. What's the difference between latency and throughput?
+
+   <details><summary>Show answer</summary>
+
+   Latency is the time one request takes. Throughput is how many requests are handled per unit of time.
+
+   </details>
+
+2. What does the CAP theorem say?
+
+   <details><summary>Show answer</summary>
+
+   During a network partition, a distributed system must choose between consistency and availability.
+
+   </details>
+
+3. What is a circuit breaker?
+
+   <details><summary>Show answer</summary>
+
+   A pattern that stops calling a failing dependency for a while. It fails fast and prevents cascading failures.
+
+   </details>
+
+4. Why prefer idempotent operations in distributed systems?
+
+   <details><summary>Show answer</summary>
+
+   Retries become safe: repeating the operation has the same effect as doing it once.
+
+   </details>
 
 ## Stuck?
 

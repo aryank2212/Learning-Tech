@@ -7,11 +7,11 @@ Building AI systems that plan, use tools, remember things and finish multi-step 
 - **Tool use:** the model calls a function (search, files, an API) with structured arguments.
 - **Orchestration:** deciding which agent or step runs next, what data it gets, and what happens when something fails.
 - **Workflow orchestration:** the same ideas for pipelines and business processes, handled by tools like Airflow, Prefect or Temporal.
-- **Container orchestration:** Kubernetes runs services. It's a different topic, covered in [system-architecture](../../../systems/architecture/system-architecture/README.md).
+- **Container orchestration:** Kubernetes runs services. It's a different topic, covered in [system architecture](../../../systems/architecture/system-architecture/README.md).
 
 ## Prerequisites
 - Python at Level 2 or better
-- [ai-ml](../../machine-learning/ai-ml/README.md) Phase 5 (using LLMs in apps)
+- [AI/ML](../../machine-learning/ai-ml/README.md) Phase 5 (using LLMs in apps)
 - An API key from Anthropic or OpenAI (keep it in a `.env` file, never in code)
 
 ## Install

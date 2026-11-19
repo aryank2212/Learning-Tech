@@ -84,12 +84,11 @@ mirror esl-elements-stat-learning https://hastie.su.domains/ElemStatLearn/      
 echo "== Direct PDFs"
 pdf mathematics-for-machine-learning https://mml-book.github.io/book/mml-book.pdf books
 pdf mathematics-for-computer-science-6042 https://courses.csail.mit.edu/6.042/spring18/mcs.pdf books
-pdf elements-of-statistical-learning https://hastie.su.domains/ElemStatLearn/printings/ESLII_print12.pdf books
 pdf bitcoin-whitepaper       https://bitcoin.org/bitcoin.pdf papers
 
 echo "== arXiv papers referenced in the repo"
 cd "$ROOT" || exit 1
-grep -rhoE 'arxiv\.org/abs/[^ )>"`]+' --include=*.md . | sed -E 's#arxiv\.org/abs/##; s/[.,;:]+$//' | sort -u | while read -r id; do
+grep -rhoE 'arxiv\.org/abs/([0-9]{4}\.[0-9]{4,5}|[a-z-]+(\.[A-Z]{2})?/[0-9]{7})' --include=*.md . | sed -E 's#arxiv\.org/abs/##' | sort -u | while read -r id; do
   safe="$(echo "$id" | tr '/' '_')"
   out="$LIB/papers/arxiv-$safe.pdf"
   if [ -s "$out" ]; then say "skip  arxiv $id (exists)"; continue; fi

@@ -5,7 +5,7 @@ How source code becomes something a machine can run. It covers lexing, parsing, 
 ## Prerequisites
 - Data structures: trees, graphs, hash maps
 - A language like C, Rust or Java
-- Automata and regular expressions (see [maths/discrete-maths.md](../../../foundations/mathematics/maths/discrete-maths.md), Phase 8)
+- Automata and regular expressions (see [discrete maths](../../../foundations/mathematics/maths/discrete-maths.md), Phase 8)
 
 ## Install
 ```bash

@@ -15,7 +15,7 @@ Good issues say what you're trying to learn, what you've already tried, and what
 ## You can contribute
 1. Fork the repository and create a branch.
 2. Make your change. Keep it small and focused, so it's easy to review.
-3. Check it: run the link check and read your Markdown on GitHub.
+3. Check it: run `python scripts/check_repo.py` (structure and internal links), and preview your Markdown on GitHub.
 4. Open a pull request that says what changed and why.
 
 Fixing a typo, a broken link or an unclear sentence is a valid contribution.
@@ -32,7 +32,7 @@ Fixing a typo, a broken link or an unclear sentence is a valid contribution.
 These are opinions, and they're welcome as long as they're clearly the author's view. Keep them short, honest and useful. Disagreement is fine; say why.
 
 ## Code of conduct
-Be kind, be specific, assume good faith. Critique ideas, not people. If something feels off, open an issue or contact the maintainer.
+Be kind, be specific, assume good faith. Critique ideas, not people. The full text is in [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
 ## Licence
 By contributing, you agree that your contribution is licensed under the same licence as the project (see [LICENSE](LICENSE)).
